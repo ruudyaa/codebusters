@@ -88,7 +88,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  color: #131313;
-  background-color: #84a278;
+  color: getColor('theme-black');
+  background-color: getColor('green-main');
   letter-spacing: 0.04em;
 }
