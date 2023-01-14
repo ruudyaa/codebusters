@@ -166,8 +166,11 @@ body {
 }
 
 .contacts__item {
-  width: 280px;
-  height: 412px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 280px;
+  max-height: 412px;
   padding: 40px 36px 24px 32px;
   background-color: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -175,45 +178,59 @@ body {
 }
 @media screen and (min-width: 768px) {
   .contacts__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex-basis: calc((100% - 32px) / 3);
-    width: 224px;
-    height: 537px;
+    max-width: 224px;
+    max-height: 537px;
     padding: 40px 42px 40px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts__item {
     flex-basis: calc((100% - 64px) / 3);
-    width: 368px;
-    height: 542px;
+    max-width: 368px;
+    max-height: 542px;
     padding: 40px;
   }
 }
 
 .contacts__pre-title {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 1.375;
-  text-align: center;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.04em;
   color: #131313;
   background-color: #f8d24e;
   border-radius: 6px;
   padding: 4px 22px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+  max-height: 22px;
 }
 @media screen and (min-width: 768px) {
   .contacts__pre-title {
     padding: 4px 13px;
+    font-size: 16px;
+    line-height: 1.375;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts__pre-title {
     padding: 4px 14px;
+    margin-bottom: 32px;
   }
 }
 
 .contacts__title {
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.8333333333;
   letter-spacing: 0.04em;
@@ -242,25 +259,26 @@ body {
   }
 }
 
-.contacts__link--orange {
+.contacts__link-orange {
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.8333333333;
   letter-spacing: 0.04em;
   color: #d6936d;
   cursor: pointer;
 }
-.contacts__link--orange:hover, .contacts__link--orange:focus {
+.contacts__link-orange:hover, .contacts__link-orange:focus {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 @media screen and (min-width: 768px) {
-  .contacts__link--orange {
+  .contacts__link-orange {
     font-size: 14px;
     line-height: 1.8571428571;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts__link--orange {
+  .contacts__link-orange {
     font-size: 16px;
     line-height: 1.8125;
   }
@@ -279,20 +297,77 @@ body {
   }
 }
 
-.work-shedule__item {
+.work-shedule__item:not(:last-child) {
   margin-bottom: 8px;
 }
 
 .work-shedule__text {
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.8333333333;
-  letter-spacing: 0.04em;
   color: #131313;
 }
+@media screen and (min-width: 768px) {
+  .work-shedule__text {
+    font-size: 14px;
+    line-height: 1.8571428571;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-shedule__text {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
 
-.work-shedule__time > span {
+.work-shedule__time {
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.8333333333;
-  letter-spacing: 0.04em;
   color: #ababab;
+}
+@media screen and (min-width: 768px) {
+  .work-shedule__time {
+    font-size: 14px;
+    line-height: 1.8571428571;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-shedule__time {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+span {
+  font-weight: 500;
+  color: #ababab;
+}
+
+.contacts__connection {
+  max-width: 130px;
+  max-height: 44px;
+}
+
+.contacts__link {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5833333333;
+  color: #131313;
+}
+.contacts__link:not(:last-child) {
+  margin-bottom: 6px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.8571428571;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 16px;
+    line-height: 1.875;
+  }
 }/*# sourceMappingURL=index.css.map */
