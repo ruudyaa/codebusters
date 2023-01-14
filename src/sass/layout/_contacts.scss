@@ -204,6 +204,11 @@
   max-width: 130px;
   max-height: 44px;
 
+  @include tablet {
+    max-width: 151px;
+    max-height: 46px;
+  }
+
   @include desktop {
     max-width: 173px;
     max-height: 52px;
@@ -229,7 +234,7 @@
 
   @include tablet {
     font-size: 14px;
-    line-height: calc(26 / 14);
+    line-height: calc(21 / 14);
   }
 
   @include desktop {
@@ -247,7 +252,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    margin-right: 16px;
   }
 
   @include desktop {
@@ -262,6 +266,7 @@
   justify-content: center;
   width: 196px;
   height: 42px;
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
@@ -276,8 +281,10 @@
     color: getColor('theme-black');
   }
 
-  &:not(:last-child) {
-    margin-bottom: 16px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
   }
 }
 

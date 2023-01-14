@@ -1,4 +1,4 @@
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="franchise__modal">
     <button type="button" class="franchise__button">
       <svg class="location__icon" width="24" height="24">
@@ -16,13 +16,32 @@
     <form class="form">
       <div class="form__wrap">
         <label for="name"></label>
-        <input class="form__input" name="name" id="name" placeholder="Name" />
+        <input
+          class="form__input"
+          name="name"
+          id="name"
+          placeholder="Name"
+          pattern="[A-Za-z] {1,15]"
+        />
 
         <label for="tel"></label>
-        <input class="form__input" name="tel" id="tel" placeholder="Phone" />
+        <input
+          class="form__input"
+          name="tel"
+          id="tel"
+          placeholder="Phone"
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+        />
 
         <label for="email"></label>
-        <input class="form__input" name="email" id="email" autocomplete="off" placeholder="Email" />
+        <input
+          class="form__input"
+          name="email"
+          id="email"
+          autocomplete="off"
+          placeholder="Email"
+          pattern="[a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}"
+        />
 
         <label for="comment"></label>
         <textarea
@@ -36,4 +55,4 @@
     </form>
     <button class="franchise__button-submit" type="submit">Submit</button>
   </div>
-</div> -->
+</div>
