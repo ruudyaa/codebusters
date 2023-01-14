@@ -15,9 +15,9 @@ $colors: (
   'button-hover-background': #0a8817,
   'button-disable-background': #ababab,
   'button-hover-border': #0a8817,
+  'white-contacts': #fff,
 );
 
 @function getColor($key) {
-    @return map-get($colors, $key);
-  }
-  
+  @return map-get($colors, $key);
+}
