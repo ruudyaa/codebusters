@@ -220,12 +220,14 @@ body {
     line-height: 1.375;
     letter-spacing: 0.04em;
     margin-bottom: 32px;
+    max-height: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts__pre-title {
     padding: 4px 14px;
     margin-bottom: 32px;
+    max-height: 30px;
   }
 }
 
@@ -338,8 +340,7 @@ body {
     line-height: 1.875;
   }
 }
-
-span {
+.work-shedule__time + span {
   font-weight: 500;
   color: #ababab;
 }
@@ -348,12 +349,22 @@ span {
   max-width: 130px;
   max-height: 44px;
 }
+@media screen and (min-width: 1200px) {
+  .contacts__connection {
+    max-width: 173px;
+    max-height: 52px;
+  }
+}
 
 .contacts__link {
-  display: block;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5833333333;
+  letter-spacing: normal;
+  color: #131313;
+  cursor: pointer;
+}
+.contacts__link:hover, .contacts__link:focus {
   color: #131313;
 }
 .contacts__link:not(:last-child) {
@@ -368,6 +379,68 @@ span {
 @media screen and (min-width: 1200px) {
   .contacts__link {
     font-size: 16px;
-    line-height: 1.875;
+    line-height: 1.5;
   }
+}
+
+.button__group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .button__group {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button__group {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 196px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  color: #131313;
+  padding: 12px 39px 12px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button.button__text {
+  font-weight: 600;
+  color: #131313;
+}
+.button:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.button__icon {
+  margin-left: 4px;
+  fill: currentColor;
+}
+
+.button__first {
+  background-color: #f8d24e;
+}
+@media screen and (min-width: 768px) {
+  .button__first {
+    margin-right: 16px;
+  }
+}
+
+.button__two {
+  border: 2px solid #f8d24e;
+  background-color: transparent;
 }/*# sourceMappingURL=index.css.map */

@@ -38,7 +38,7 @@
   max-width: 280px;
   max-height: 412px;
   padding: 40px 36px 24px 32px;
-  background-color: #ffffff;
+  background-color: getColor('white-contacts');
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
@@ -70,7 +70,7 @@
   letter-spacing: 0.04em;
   color: getColor('theme-black');
   background-color: getColor('yellow-main');
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 4px 22px;
   margin-bottom: 20px;
   max-height: 22px;
@@ -82,12 +82,14 @@
     letter-spacing: 0.04em;
     margin-bottom: 32px;
     max-height: 30px;
+    border-radius: 6px;
   }
 
   @include desktop {
     padding: 4px 14px;
     margin-bottom: 32px;
     max-height: 30px;
+    border-radius: 6px;
   }
 }
 
