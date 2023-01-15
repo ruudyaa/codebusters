@@ -1,8 +1,9 @@
 .back-to-top {
+    position: fixed;
     background: getColor('yellow-main');
     color: getColor('theme-white');
     border-radius: 50%;
-    position: fixed;
+    display: flex;
     bottom: -50px;
     padding: 10px 12px;
     right: 20px;
