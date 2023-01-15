@@ -14,10 +14,8 @@ $colors: (
   'button-text': #000000,
   'button-hover-focus': #0a8817,
   'button-disable': #ababab,
-  
 );
 
 @function getColor($key) {
-    @return map-get($colors, $key);
-  }
-  
+  @return map-get($colors, $key);
+}
