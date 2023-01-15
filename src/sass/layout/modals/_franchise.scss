@@ -110,7 +110,7 @@
   line-height: calc(20 / 14);
   letter-spacing: 0;
   color: getColor('theme-black');
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   width: 222px;
   max-height: 240px;
 
@@ -126,7 +126,7 @@
 .form__wrap {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 
   @include tablet {
     align-items: center;
@@ -137,7 +137,7 @@
 .form__input {
   padding: 8px 12px 7px 12px;
   outline: none;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -156,18 +156,7 @@
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 16px;
-  }
-
-  &::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(17 / 14);
-    color: getColor('theme-black');
-
-    @include tablet {
-      font-size: 14px;
-      line-height: calc(20 / 14);
-    }
+    margin-bottom: 12px;
   }
 }
 
@@ -190,17 +179,9 @@
     padding-bottom: 53px;
     padding-left: 16px;
   }
-
-  &::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(17 / 14);
-    color: getColor('theme-black');
-
-    @include tablet {
-      font-size: 14px;
-      line-height: calc(20 / 14);
-    }
+  & + .form__label {
+    top: 25%;
+    left: 5%;
   }
 
   &:focus {
@@ -238,5 +219,50 @@
   &:focus {
     color: getColor('white-contacts');
     background-color: getColor('button-hover-background');
+  }
+}
+
+.form__field {
+  position: relative;
+}
+
+.form__label {
+  position: absolute;
+  top: 36%;
+  left: 5%;
+  transform: translateY(-50%);
+  transition: transform 250ms linear;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(17 / 14);
+  color: getColor('theme-black');
+
+  @include tablet {
+    top: 45%;
+    left: 5%;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(-215%);
+  color: getColor('orange-main');
+
+  @include tablet {
+    transform: translateX(-150%);
+    color: getColor('orange-main');
+  }
+}
+
+.form__textarea:focus + .form__label,
+.form__textarea:not(:placeholder-shown) + .form__label {
+  transform: translateY(-200%);
+  color: getColor('orange-main');
+
+  @include tablet {
+    transform: translateX(-150%);
+    color: getColor('orange-main');
   }
 }

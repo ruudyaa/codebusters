@@ -15,42 +15,47 @@
 
     <form class="form">
       <div class="form__wrap">
-        <label for="name"></label>
-        <input
-          class="form__input"
-          name="name"
-          id="name"
-          placeholder="Name"
-          pattern="[A-Za-z] {1,15]"
-        />
-
-        <label for="tel"></label>
-        <input
-          class="form__input"
-          name="tel"
-          id="tel"
-          placeholder="Phone"
-          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-        />
-
-        <label for="email"></label>
-        <input
-          class="form__input"
-          name="email"
-          id="email"
-          autocomplete="off"
-          placeholder="Email"
-          pattern="[a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}"
-        />
-
-        <label for="comment"></label>
-        <textarea
-          class="form__textarea"
-          name="comment"
-          id="comment"
-          rows="5"
-          placeholder="Comment"
-        ></textarea>
+        <div class="form__field">
+          <input
+            class="form__input"
+            name="name"
+            id="name"
+            pattern="[A-Za-z] {1,15]"
+            placeholder=" "
+          />
+          <label for="name" class="form__label">Name</label>
+        </div>
+        <div class="form__field">
+          <input
+            class="form__input"
+            name="tel"
+            id="tel"
+            placeholder=" "
+            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          />
+          <label for="tel" class="form__label">Phone</label>
+        </div>
+        <div class="form__field">
+          <input
+            class="form__input"
+            name="email"
+            id="email"
+            autocomplete="off"
+            placeholder=" "
+            pattern="[a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}"
+          />
+          <label for="email" class="form__label">Email</label>
+        </div>
+        <div class="form__field">
+          <textarea
+            class="form__textarea"
+            name="comment"
+            id="comment"
+            rows="5"
+            placeholder=" "
+          ></textarea>
+          <label for="comment" class="form__label">Comment</label>
+        </div>
       </div>
     </form>
     <button class="franchise__button-submit" type="submit">Submit</button>
