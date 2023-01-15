@@ -62,30 +62,32 @@
         gap: 12px;
     }
 
-    &__producrts {
-        width: 108px;
-        height: 38px;
-        border: 2px solid #F8D24E;
-        border-radius: 8px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     &__btn {
         font-weight: 600;
         font-size: 12px;
-        line-height: 15px;
+        line-height: calc(15 / 12);
 
         @include desktop{
             font-size: 14px;
-            line-height: 18px;
+            line-height: calc(18 / 14);
         }
     }
 
     &__btn--products {
         color: getColor('button-text');
+        width: 108px;
+        height: 38px;
+        border: 2px solid getColor('yellow-main');
+        border-radius: 8px;
+        padding: 12px 34px;
+        
+        @media screen and (max-width:1199){
+            margin-right: 12px;
+        }
+
+        @include desktop {
+            margin-right: 34px;
+        }
     }
 
     &__btn--made {
@@ -117,7 +119,7 @@
     &__number {
         font-weight: 900;
         font-size: 28px;
-        line-height: 34px;
+        line-height: calc(34 / 28);
         text-align: right;
         letter-spacing: 0.04em;
         color: getColor(‘theme-black’);
@@ -126,19 +128,19 @@
 
         @include desktop{
             font-size: 46px;
-            line-height: 56px;
+            line-height: calc(56 / 46);
             text-align: right;
         }
     }
     &__label {
         font-size: 8px;
-        line-height: 10px;
+        line-height: calc(10 / 8);
         text-align: right;
         color: getColor('theme-white');
 
         @include desktop {
             font-size: 14px;
-            line-height: 17px;
+            line-height: calc(17 / 14);
         }
     }
 
@@ -157,7 +159,7 @@
 
     &__text {
         font-size: 12px;
-        line-height: 140%;
+        line-height: calc(17 / 12);
         color: getColor('theme-white');
         width: 139px;
         margin-bottom: 12px;
@@ -165,6 +167,7 @@
             font-size: 14px;
             width: 200px;
             margin-bottom: 24px;
+            line-height: calc(20 / 14);
         }
     }
     &__arrow {
