@@ -1,0 +1,124 @@
+.advantages {
+    padding-top: 50px;
+    padding-bottom: 64px;
+
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include tablet {
+        padding-bottom: 204px;
+    }
+
+    @include desktop {
+        padding-bottom: 178px;
+    }
+}
+
+.advantages-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        gap: 80px;
+    }
+}
+
+.advantages-list__item {
+    max-width: 230px;
+    max-height: 166px;
+
+    @include tablet {
+        max-width: 152px;
+        max-height: 241px;
+        flex-basis: calc((100% - 240px) / 3);
+    }
+
+    @include desktop {
+        max-width: 368px;
+        max-height: 225px;
+        flex-basis: calc((100% - 96px) / 3);
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 50px;
+    }
+
+    &:nth-child(1)::before {
+        background-image: url(../images/advantages/cow@1x.png);
+
+        @include retina {
+            background-image: url(../images/advantages/cow@2x.png);
+        }
+    }
+
+    &:nth-child(2)::before {
+        background-image: url(../images/advantages/weight@1x.png);
+
+        @include retina {
+            background-image: url(../images/advantages/weight@2x.png);
+        }
+    }
+
+    &:nth-child(3)::before {
+        background-image: url(../images/advantages/ice-crema@1x.png);
+
+        @include retina {
+            background-image: url(../images/advantages/ice-crema@2x.png);
+        }
+    }
+}
+
+.advantages-list__title {
+    color: getColor('theme-white');
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 16px;
+
+    @include tablet {
+        font-size: 48px;
+        line-height: calc(59 / 48);
+        margin-top: 32px;
+    }
+
+    @include desktop {
+        font-size: 58px;
+        line-height: calc(71 / 58);
+        margin-top: 40px;
+    }
+}
+
+.advantages-list__text {
+    color: getColor('theme-white');
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    text-align: center;
+    margin-top: 16px;
+
+    @media screen and (max-width:767px) {
+        font-weight: 700;
+    }
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        margin-top: 12px;
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(28 / 16);
+    }
+}
