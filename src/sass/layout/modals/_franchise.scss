@@ -21,7 +21,7 @@
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  padding: 12px 28px 28px;
+  padding: 28px;
   border-radius: 10px;
   border: 2px solid #f8d24e;
   background-color: getColor('white-contacts');
@@ -38,17 +38,19 @@
 
   @include tablet {
     width: 568px;
-    height: 485px;
-    padding: 12px 60px 32px;
+    height: 668px;
+    padding: 32px 60px;
   }
 }
 
 .franchise__button {
+  position: absolute;
+  left: 90%;
+  top: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin-left: 225px;
   background-color: inherit;
   border: none;
   color: getColor('theme-black');
@@ -70,9 +72,9 @@
   }
 
   @include tablet {
-    margin-left: 470px;
     width: 24px;
     height: 24px;
+    left: 93%;
 
     & .franchise__icon {
       width: 13px;
@@ -98,22 +100,38 @@
     font-size: 20px;
     line-height: calc(28 / 20);
     width: 322px;
-    height: 28px;
-    margin: 0 auto 32px;
+    height: 84px;
+    margin: 0 auto 24px;
   }
 }
 
 .franchise__text {
   font-size: 14px;
   line-height: calc(20 / 14);
+  letter-spacing: 0;
   color: getColor('theme-black');
   margin-bottom: 24px;
+  width: 222px;
+  max-height: 240px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    width: 448px;
+    height: 132px;
+    margin-bottom: 32px;
+  }
 }
 
 .form__wrap {
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
+
+  @include tablet {
+    align-items: center;
+    margin-bottom: 32px;
+  }
 }
 
 .form__input {
@@ -132,11 +150,24 @@
     border-color: getColor('orange-main');
   }
 
+  @include tablet {
+    width: 368px;
+    height: 42px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+  }
+
   &::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: calc(17 / 14);
     color: getColor('theme-black');
+
+    @include tablet {
+      font-size: 14px;
+      line-height: calc(20 / 14);
+    }
   }
 }
 
@@ -152,11 +183,24 @@
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @include tablet {
+    width: 368px;
+    height: 84px;
+    padding-top: 11px;
+    padding-bottom: 53px;
+    padding-left: 16px;
+  }
+
   &::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: calc(17 / 14);
     color: getColor('theme-black');
+
+    @include tablet {
+      font-size: 14px;
+      line-height: calc(20 / 14);
+    }
   }
 
   &:focus {
@@ -185,7 +229,7 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @include tablet {
-    max-width: 145px;
+    max-width: 121px;
     height: 42px;
     font-size: 14px;
     line-height: calc(17 / 14);
