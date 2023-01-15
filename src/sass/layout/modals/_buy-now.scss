@@ -7,12 +7,6 @@
     border-radius: 10px;
     position: relative;
 
-    // position: absolute;
-    // top:50%;
-    // left:50%;
-    // transform: scale(1) translate(-50%, -50%);
-    // transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
     &__title {
         font-family: 'Seymour One', sans-serif;
         font-size: 16px;
@@ -24,13 +18,11 @@
     &__close {
         fill: getColor('theme-black');
         position: absolute;
-        top: 12px; //top 12px
+        top: 12px;
         right: 12px;
         cursor: pointer;
         transition: all 0.6s;
         box-sizing: content-box;
-        border: none;
-        background: getColor('theme-white');
         &:hover {
             color: getColor('theme-white');
             transform: rotate(135deg);
@@ -96,21 +88,6 @@
         bottom: 67px;
     }
 
-    &__ice:nth-child(1){
-        background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-    }
-
-    &__ice:nth-child(2){
-        background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-    }
-
-    &__ice:nth-child(3){
-        background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
-        box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
-    }
-
     &__product {
         font-weight: 700;
         font-size: 16px;
@@ -124,7 +101,7 @@
         align-items: center;
     }
 
-    &__input {
+    &__inputs {
         width: 224px;
         height: 32px;
         padding: 8px 12px 8px 12px;

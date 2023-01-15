@@ -3,14 +3,13 @@
         <div class="form">
             <form>
                 <h3 class="form__title">Buy now</h3>
-                    <button type="button" class="js-modal-close form__close">
-                        <svg width="11px" height="11px">
-                            <use href="./images/icons.svg#mobile_menu_x"></use>
-                        </svg>
-                    </button>
+                    
+                <svg class="form__close js-modal-close" width="11px" height="11px">
+                    <use href="./images/icons.svg#mobile_menu_x"></use>
+                </svg>
                 <div class="form__container">
                     <div class="form__radio">
-                        <label class="form__label">
+                        <label>
                             <input type="radio" name="ice-cream" value="ice-cream" class="form__choice">
                             <img
                             srcset="
@@ -20,13 +19,15 @@
                                 src="./images/modal/cream-modal@1x.png"
                                 alt="Морозиво"
                                 class="form__ice"
+                                width="132"
+                                height="132"
                             />
                             <b class="form__product">ice cream</b>
                         </label>
                     </div>
                     
                     <div class="form__radio">
-                        <label class="form__label">
+                        <label>
                             <input type="radio" name="ice-cream" value="ice-coffee" class="form__choice">
                             <img
                             srcset="
@@ -36,13 +37,15 @@
                             src="./images/modal/coffee-modal@1x.png"
                             alt="Морозиво"
                             class="form__ice"
+                            width="132"
+                            height="132"
                             />
                             <b class="form__product">ice coffee</b>
                         </label>
                     </div>
                     
                     <div class="form__radio">
-                        <label class="form__label">
+                        <label>
                             <input type="radio" name="ice-cream" value="milkshake" class="form__choice">
                             <img
                             srcset="
@@ -52,6 +55,8 @@
                             src="./images/modal/shake-modal@1x.png"
                             alt="Морозиво"
                             class="form__ice"
+                            width="132"
+                            height="132"
                             />
                             <b class="form__product">milkshakes</b>
                         </label>
@@ -59,10 +64,10 @@
                 </div>
                 <div>
                     <label class="form__field">
-                        <input type="text" class="form__input" name="name" placeholder="Name" required/>
+                        <input type="text" class="form__inputs" name="name" placeholder="Name" required/>
                     </label>
                     <label class="form__field">
-                        <input type="tel" class="form__input" name="phone" placeholder="Phone"
+                        <input type="tel" class="form__inputs" name="phone" placeholder="Phone"
                         minlength="9" maxlength="12" required/>
                     </label>
                     <label class="form__field">
