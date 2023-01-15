@@ -3,25 +3,25 @@
     background-color: #FCFCFC;
     background-image: url(/src/images/bg-mob@1x.png);
 
-    @mixin retina {
+    @include retina {
         background-image: url(/src/images/bg-mob@2x.png);
       }
 
-    //   @include tablet {
-    //     background-image: url(/src/images/bg-tab@1x.png);
+      @include tablet {
+        background-image: url(/src/images/bg-tab@1x.png);
     
-    //     @mixin retina {
-    //         background-image: url(/src/images/bg-tab@2x.png);
-    //       }
-    //   }
+        @include retina {
+            background-image: url(/src/images/bg-tab@2x.png);
+          }
+      }
 
-    //   @include desktop {
-    //     background-image: url(/src/images/bg-desk@1x.png);
+      @include desktop {
+        background-image: url(/src/images/bg-desk@1x.png);
     
-    //     @mixin retina {
-    //         background-image: url(/src/images/bg-desk@2x.png);
-    //       }
-    //   }
+        @include retina {
+            background-image: url(/src/images/bg-desk@2x.png);
+          }
+      }
 }
 
 
