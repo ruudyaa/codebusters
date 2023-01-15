@@ -1,5 +1,6 @@
 .contacts {
   padding-bottom: 60px;
+  margin-top: -128px;
 
   @include tablet {
     padding-bottom: 40px;
@@ -146,8 +147,8 @@
 }
 
 .work-shedule {
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid getColor('footer-border');
+  border-bottom: 1px solid getColor('footer-border');
   padding: 24px 0px;
   margin-bottom: 24px;
 
@@ -302,6 +303,6 @@
 }
 
 .button__two {
-  border: 2px solid #f8d24e;
+  border: 2px solid getColor('yellow-main');
   background-color: transparent;
 }
