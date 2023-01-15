@@ -20,6 +20,7 @@
   z-index: 4;
   position: absolute;
   top:0;
+  border-radius: 20px;
 }
 .backdrop.is-hidden-product {
 opacity: 0; 
@@ -291,7 +292,7 @@ justify-content: space-between;
 
 }
 .product__md-ingred-tabl:hover{
-  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  box-shadow: 0px 6px 20px rgba(10, 36, 23, 0.1);
   // background-image:url(../images/bg-tab@1x.png);
 }
 
@@ -351,7 +352,7 @@ position: relative;
     }
 }
 .product__mdform-formfield:hover{
-  border: 2px solid #d6936d;
+  border: 2px solid #F8D24E;
 
 }
 
@@ -419,7 +420,8 @@ resize:vertical;
 width: 240px;
 }
 .product__mdform-comment:hover{
-     border: 2px solid #d6936d
+
+   border: 2px solid #F8D24E; 
 }
 @media screen and (min-width: 1200px) {
     .product__mdform-comment{

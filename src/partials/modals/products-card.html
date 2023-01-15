@@ -1,9 +1,9 @@
-<a href="#" class="open_modal-link js-open-modal" data-modal-open >Open</a>
-<div  class="backdrop is-hidden-product js-modal"  data-modal>
+<a href="#" class="open_modal-link" data-modal-open >Open product cards (test)</a>
+<div  class="backdrop is-hidden-product"  data-modal>
   <div class="product__modal">
       <div class="product__md-close">
-        <button class="product__btnclose" type="button">
-          <svg class="product__icon-close js-close-modal">
+        <button class="product__btnclose" type="button"  data-modal-close>
+          <svg class="product__icon-close">
             <use href="./images/icons.svg#mobile_menu_x" width="100%"></use>
           </svg>
         </button>
@@ -110,7 +110,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+    refs.modal.classList.toggle("is-hidden-product");
   }
 })();
 
