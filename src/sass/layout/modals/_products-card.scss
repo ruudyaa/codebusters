@@ -7,8 +7,17 @@
   align-items: center;
   bottom: 0;
   right: 0;
-  background-color:  rgba(0, 0, 0, 0.2);;
+  background-color:  rgba(0, 0, 0, 0.7);;
   z-index: 3;
+  overflow-y: auto;
+}
+.open_modal-link{
+  padding: 20px 20px;
+  display: inline-block;
+  background-color: #D9D9D9;
+  z-index: 4;
+  position: absolute;
+  top:0;
 }
 .backdrop.is-hidden-product {
 opacity: 0; 
@@ -31,12 +40,13 @@ border-radius: 10px;
 position: absolute;
 
 left:50%;
+top:50%;
 padding: 28px 20px;
 
-transform: translateX(-50%) ;
+transform: translate(-50%, -50%) ;
 
 overflow:hidden;
-overflow: scroll;
+overflow-y: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -116,9 +126,9 @@ box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   transition: all 300ms linear;
   background-image: url(../images/modal/ice-cream-modal@1x.png);
 
-//   @include retina {
-//   background-image: url(../image/modal/ice-cream-modal@2x.png);
-// }
+  @include retina {
+   background-image: url(../images/modal/ice-cream-modal@2x.png);
+}
 }
 
 .product__modal-tumbimg:hover.product__modal-tumbimg:before { 
@@ -306,6 +316,7 @@ margin-bottom: 24px;
 display: block;
 width: 240px;
 height: 42px;   
+
 background: rgba(248, 210, 78, 0.1);
 border: 1px solid #84A178;
 border-radius: 10px;
@@ -337,6 +348,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.40;
 color: getColor(‘theme-black’);
+background: rgba(248, 210, 78, 0.1);
 
 
 
@@ -353,6 +365,7 @@ transition: top 300ms linear;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.40;
+background: rgba(248, 210, 78, 0.1);
 color: getColor(‘theme-black’);
 
 }
