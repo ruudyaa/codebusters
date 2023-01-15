@@ -5,6 +5,7 @@ $colors: (
   'theme-white': #fcfcfc,
   'theme-black': #131313,
   'theme-grey': #d9d9d9,
+  'footer-grey': #7a7a7a,
   'theme-grey-2': #ababab,
   'green-main': #84a178,
   'green-transparent': rgba(156, 190, 143, 0.7),
@@ -18,6 +19,5 @@ $colors: (
 );
 
 @function getColor($key) {
-    @return map-get($colors, $key);
-  }
-  
+  @return map-get($colors, $key);
+}
