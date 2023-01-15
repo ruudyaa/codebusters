@@ -1,0 +1,352 @@
+.products {
+  max-width: 480px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  //   background-image: url(../images/products/cream-desk@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .products {
+    //  background-image: url(../images/products/cream-desk@2x.png);
+  }
+}
+
+.products__container {
+  text-align: center;
+}
+
+.products__suptitle {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #131313;
+}
+
+.products__title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 148px;
+}
+
+.products__item {
+  position: relative;
+  width: 280px;
+  height: 420px;
+  padding: 123px 40px 0;
+  background: #aec6a5;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-bottom: 168px;
+  // !!!! кроме последнего ребенка !!!!
+}
+
+.products__item-wrapper {
+  width: 200px;
+  height: 148px;
+}
+
+.products__item-title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #131313;
+}
+
+.products__item-text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.79;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+.products__modal-open-btn {
+  display: inline-block;
+  padding: 53px 15px 16px;
+  cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+/////////// +  480px  +  //////////////////////////////////
+
+@media screen and (min-width: 480px) {
+  .products__title {
+    margin-bottom: 145px;
+  }
+
+  .products__item {
+    position: relative;
+    width: 250px;
+    height: 533px;
+    padding: 126px 25px 0;
+    background: #aec6a5;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+  .products__modal-open-btn {
+    padding: 61px 15px 16px;
+  }
+}
+
+/////////// -  480px   -/////////////////////////////////////////
+
+//////////// +  768px +  /////////////////////////////////////////
+
+@media screen and (min-width: 768px) {
+  .products {
+    max-width: 768px;
+  }
+  .products__suptitle {
+    font-size: 22px;
+  }
+
+  .products__title {
+    font-size: 34px;
+    margin-bottom: 200px;
+  }
+  .products__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+  }
+
+  .products__item {
+    position: relative;
+    width: 224px;
+    height: 548px;
+    padding: 108px 26px 0;
+    background: #aec6a5;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    // flex-basis: calc((100% - 58px) / 2);
+  }
+
+  .products__item-wrapper {
+    width: 172px;
+    height: 175px;
+  }
+
+  .products__item-title {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 40px;
+  }
+
+  .products__modal-open-btn {
+    padding: 50px 15px 12px;
+  }
+
+  // уточнить вопрос по calk!!!!!!!!
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
+  screen and (min-resolution: 192dpi) and (min-width: 767px),
+  screen and (min-resolution: 2dppx) and (min-width: 767px) {
+  .products {
+    //  background-image: url("../images/hero/tablet/tablet-bg@2x.jpg");
+  }
+}
+
+///////////////// -  768px -  ///////////////////////////
+
+////////// +  1200px  + //////////////////////////////////////
+
+@media screen and (min-width: 1200px) {
+  .products {
+    max-width: 1200px;
+    //  background-image: url(../images/products/cream-desk@1x.png);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .products {
+    // background-image: url('../images/hero/desktop/desktop-bg@2x.jpg');
+  }
+}
+
+.products__suptitle {
+  font-size: 30px;
+  letter-spacing: 0.04em;
+}
+.products__title {
+  font-size: 36px;
+  letter-spacing: 0.06em;
+  margin-bottom: 303px;
+}
+
+.products__list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 29px;
+}
+
+.products__item {
+  position: relative;
+  width: 370px;
+  height: 536px;
+  padding: 165px 64px 0;
+  background: #aec6a5;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  flex-basis: calc((100% - 58px) / 2);
+}
+.products__item-title {
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 66px;
+  margin-bottom: 40px;
+}
+
+.products__item-wrapper {
+  width: 246px;
+  height: 142px;
+}
+
+.products__item-text {
+  font-size: 16px;
+}
+
+.products__modal-open-btn {
+  padding: 50px 15px 60px;
+}
+
+//////////////// -  1200 -  //////////////////////////////////
+
+.item-cream::before {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  bottom: 80%;
+  left: 34px;
+  content: '';
+  width: 302px;
+  height: 302px;
+  background: url(../images/products/cream-desk@1x.png);
+}
+.item-coffee {
+  background: #efd478;
+}
+
+.item-coffee::before {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  bottom: 80%;
+  left: 34px;
+  content: '';
+  width: 302px;
+  height: 302px;
+  background: url(../images/products/coffee-desk@1x.png);
+}
+.item-shakes {
+  background: #d6936d;
+}
+
+.item-shakes::before {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  bottom: 80%;
+  left: 34px;
+  content: '';
+  width: 302px;
+  height: 302px;
+  background: url(../images/products/shake-desk@1x.png);
+}
+
+/////////////////////////////////////////////////////////
+
+// .products__item-wrapper {
+//   width: 246px;
+//   height: 142px;
+// }
+//////////////////////////////////////////////
+
+.item-title-cream::after {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  bottom: 413px;
+  left: 34px;
+  content: '';
+  width: 302px;
+  height: 302px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+}
+
+.item-title-coffee::before {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  bottom: 413px;
+  left: 34px;
+  content: '';
+  width: 302px;
+  height: 302px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+}
+
+.item-title-shakes::before {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  bottom: 413px;
+  left: 34px;
+  content: '';
+  width: 302px;
+  height: 302px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+///////////////////////////////////////////////////////
+
+.products__modal-open-btn {
+  display: inline-block;
+  padding: 50px 15px 60px;
+  cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
+}
