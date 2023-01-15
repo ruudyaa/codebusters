@@ -1,5 +1,5 @@
 <a href="#" class="open_modal-link" data-modal-open >Open product cards (test)</a>
-<div  class="backdrop is-hidden-product"  data-modal>
+<div  class="backdrop visually-hidden"  data-modal>
   <div class="product__modal">
       <div class="product__md-close">
         <button class="product__btnclose" type="button"  data-modal-close>
@@ -110,7 +110,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden-product");
+    refs.modal.classList.toggle("visually-hidden");
   }
 })();
 

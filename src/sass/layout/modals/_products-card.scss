@@ -13,6 +13,7 @@
   scale:1;
   transition:all 200ms linear;
 }
+// _________________ технычна 
 .open_modal-link{
   padding: 20px 20px;
   display: inline-block;
@@ -21,12 +22,16 @@
   position: absolute;
   top:0;
   border-radius: 20px;
-}
-.backdrop.is-hidden-product {
-opacity: 0; 
-pointer-events: none;
-scale:0.5;
+
+  .backdrop.is-hidden-product {
+    opacity: 0; 
+    pointer-events: none;
+    scale:0.5;
 } 
+}
+
+// _________________ технычна 
+
 .backdrop.is-hidden-product .product__modal {
   opacity: 0; 
   pointer-events: none;
@@ -36,30 +41,26 @@ scale:0.5;
   } 
 
 .product__modal{
-position: absolute;
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 280px;
-
-height: auto;
-
-background: #fcfcfc;
-
-border: 2px solid #F8D24E;
-border-radius: 10px;
-position: absolute;
-
-left:50%;
-top:50%;
-padding: 28px 20px;
-
-transform: translate(-50%, -50%) ;
-
-overflow:hidden;
-overflow-y: auto;
-scale:1;
-transition:all 300ms linear;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    height: auto;
+    // background: #fcfcfc;
+    background: getColor('theme-white');
+    border: 2px solid #F8D24E;
+    border: 2px solid getColor( 'yellow-main');
+    border-radius: 10px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    padding: 28px 20px;
+    transform: translate(-50%, -50%) ;
+    overflow:hidden;
+    overflow-y: auto;
+    scale:1;
+    transition:all 300ms linear;
 }
 
 @media screen and (min-width: 1200px) {
@@ -180,6 +181,7 @@ transition: all 300ms linear;
 height: 72px;
 
 border: 2px solid #9CBE8F;
+
 border-radius: 40px;
 }
 .product__benefit-hidden{
@@ -335,6 +337,7 @@ display: block;
 width: 240px;
 height: 42px;   
 border: 1px solid #84A178;
+border: 1px solid getColor( 'green-main');
 background: rgba(248, 210, 78, 0.1);
 
 border-radius: 10px;
@@ -352,7 +355,7 @@ position: relative;
     }
 }
 .product__mdform-formfield:hover{
-  border: 2px solid #F8D24E;
+  border: 2px solid getColor('yellow-main');
 
 }
 
@@ -409,7 +412,7 @@ position: relative;
  
 .product__mdform-comment{
 background: rgba(248, 210, 78, 0.1);
-border: 1px solid #84A178;
+border: 1px solid getColor( 'green-main');
 border-radius: 10px;
 display: block;
 
@@ -421,7 +424,7 @@ width: 240px;
 }
 .product__mdform-comment:hover{
 
-   border: 2px solid #F8D24E; 
+   border: 2px solid getColor('yellow-main'); 
 }
 @media screen and (min-width: 1200px) {
     .product__mdform-comment{
@@ -437,6 +440,7 @@ left: 16px;
 top: 18px;
 transform: translatey(-50%);
 background: #FCFCFC;
+background: getColor('theme-white');
 // background: rgba(248, 210, 78, 0.1);
 transition: top 300ms linear;
 font-weight: 400;
@@ -492,10 +496,11 @@ fill:#FFFFFF;
 }
 .btn-yellow, .product__md-btn:active{
 
-  background-color:#F8D24E;
- 
+  background-color:getColor('yellow-main');
   color:#131313;
-  border-color:#F8D24E;
+  color: getColor(‘theme-black’);
+  
+  border-color:getColor('yellow-main');
   border-width: 2px;
   transition: all 300ms linear;
 }
