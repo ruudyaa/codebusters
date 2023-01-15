@@ -1,0 +1,63 @@
+<div class="backdrop is-hidden">
+  <div class="franchise__modal">
+    <button type="button" class="franchise__button">
+      <svg class="franchise__icon">
+        <use href="./images/icons.svg#mobile_menu_x"></use>
+      </svg>
+    </button>
+    <h2 class="franchise__title">Thank you for your interest in owning an Ice Cream shop</h2>
+    <p class="franchise__text">
+      Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+      applications at this time. Once the application process resumes, we will contact you for
+      further information. Please fill out the contact information below and we will reach out for
+      additional information. We appreciate your patience.
+    </p>
+
+    <form class="form">
+      <div class="form__wrap">
+        <div class="form__field">
+          <input
+            class="form__input"
+            name="name"
+            id="name"
+            pattern="[A-Za-z] {1,15]"
+            placeholder=" "
+          />
+          <label for="name" class="form__label">Name</label>
+        </div>
+        <div class="form__field">
+          <input
+            class="form__input"
+            name="tel"
+            id="tel"
+            placeholder=" "
+            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          />
+          <label for="tel" class="form__label">Phone</label>
+        </div>
+        <div class="form__field">
+          <input
+            class="form__input"
+            name="email"
+            id="email"
+            autocomplete="off"
+            placeholder=" "
+            pattern="[a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}"
+          />
+          <label for="email" class="form__label">Email</label>
+        </div>
+        <div class="form__field">
+          <textarea
+            class="form__textarea"
+            name="comment"
+            id="comment"
+            rows="5"
+            placeholder=" "
+          ></textarea>
+          <label for="comment" class="form__label">Comment</label>
+        </div>
+      </div>
+    </form>
+    <button class="franchise__button-submit" type="submit">Submit</button>
+  </div>
+</div>
