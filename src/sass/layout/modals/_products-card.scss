@@ -10,6 +10,8 @@
   background-color:  rgba(0, 0, 0, 0.7);;
   z-index: 3;
   overflow-y: auto;
+  scale:1;
+  transition:all 200ms linear;
 }
 .open_modal-link{
   padding: 20px 20px;
@@ -22,7 +24,15 @@
 .backdrop.is-hidden-product {
 opacity: 0; 
 pointer-events: none;
+scale:0.5;
 } 
+.backdrop.is-hidden-product .product__modal {
+  opacity: 0; 
+  pointer-events: none;
+  scale:0.1;
+  top:0;
+  left:0;
+  } 
 
 .product__modal{
 position: absolute;
@@ -47,6 +57,8 @@ transform: translate(-50%, -50%) ;
 
 overflow:hidden;
 overflow-y: auto;
+scale:1;
+transition:all 300ms linear;
 }
 
 @media screen and (min-width: 1200px) {
@@ -60,8 +72,12 @@ display: block;
 margin-left: auto;
 margin-right: -12px;
 margin-top: -12px;
-
+border: none;
 transition: all 300ms linear;
+}
+
+.product__btnclose{
+  border:none;
 }
 @media screen and (min-width: 1200px) {
     .product__icon-close{
@@ -276,6 +292,7 @@ justify-content: space-between;
 }
 .product__md-ingred-tabl:hover{
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  // background-image:url(../images/bg-tab@1x.png);
 }
 
 .product__ingred-descr{
@@ -316,9 +333,9 @@ margin-bottom: 24px;
 display: block;
 width: 240px;
 height: 42px;   
-
-background: rgba(248, 210, 78, 0.1);
 border: 1px solid #84A178;
+background: rgba(248, 210, 78, 0.1);
+
 border-radius: 10px;
 margin-bottom: 16px;
 padding: 11px 10px;
@@ -334,8 +351,7 @@ position: relative;
     }
 }
 .product__mdform-formfield:hover{
-
-  border: 2px solid #0A8817;
+  border: 2px solid #d6936d;
 
 }
 
@@ -366,6 +382,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.40;
 background: rgba(248, 210, 78, 0.1);
+// background: #FCFCFC;
 color: getColor(‘theme-black’);
 
 }
@@ -376,7 +393,7 @@ color: getColor(‘theme-black’);
 top:0px;
 left:50px;
 font-weight: 500;
-
+background: #FCFCFC;
 }
 .product__mdform-input-tel:focus + .product__mdform-tel-label::after{
 content:"(+xxx-xxxxxxxxxx)"   
@@ -402,7 +419,7 @@ resize:vertical;
 width: 240px;
 }
 .product__mdform-comment:hover{
-    border: 2px solid #0A8817;
+     border: 2px solid #d6936d
 }
 @media screen and (min-width: 1200px) {
     .product__mdform-comment{
@@ -418,6 +435,7 @@ left: 16px;
 top: 18px;
 transform: translatey(-50%);
 background: #FCFCFC;
+// background: rgba(248, 210, 78, 0.1);
 transition: top 300ms linear;
 font-weight: 400;
 font-size: 14px;

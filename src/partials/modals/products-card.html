@@ -1,12 +1,12 @@
-<a href="#" class="open_modal-link js-prodact-open" data-modal="product-card1">Open</a>
-<div  class="backdrop is-hidden-productt" data-product data-modal="product-card1">
+<a href="#" class="open_modal-link js-open-modal" data-modal-open >Open</a>
+<div  class="backdrop is-hidden-product js-modal"  data-modal>
   <div class="product__modal">
-      <div class="product__md-close" data-product-close>
-      
-          <svg class="product__icon-close">
-              <use href="./images/icons.svg#mobile_menu_x" width="100%"></use>
+      <div class="product__md-close">
+        <button class="product__btnclose" type="button">
+          <svg class="product__icon-close js-close-modal">
+            <use href="./images/icons.svg#mobile_menu_x" width="100%"></use>
           </svg>
-         
+        </button>
       </div>
       <h4 class="product__md-title">Chololate icecream</h4>
 
@@ -99,6 +99,20 @@
   </div>
 </div>
 <script>
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
 
   
 </script>
