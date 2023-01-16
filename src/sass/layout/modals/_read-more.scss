@@ -22,8 +22,8 @@
 
   padding: 28px;
 
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
+  background: getColor('theme-white');
+  border: 2px solid getColor('yellow-main');
   border-radius: 10px;
 
   @include tablet {
@@ -37,13 +37,13 @@
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: calc(24 / 16);
   text-align: center;
-  color: #131313;
+  color: getColor('theme-black');
 
   @include tablet {
     font-size: 20px;
-    line-height: 1.4;
+    line-height: calc(28 / 20);
   }
 }
 
@@ -65,7 +65,7 @@
 
   &:hover,
   :focus {
-    color: #f8d24e;
+    color: getColor('yellow-main');
   }
 }
 
@@ -96,12 +96,12 @@
   margin-top: 20px;
 
   font-size: 14px;
-  line-height: 1.43;
+  line-height: calc(20 / 14);
 
-  color: #131313;
+  color: getColor('theme-black');
 
   @include tablet {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: calc(23 / 16);
   }
 }
