@@ -2,7 +2,7 @@
 
 
 .reviews{
-    
+    border-top: 30px solid getColor('green-main');
     background-image: url(/src/images/bg-mob@1x.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,6 +21,7 @@
       }
 
       @include desktop {
+        border-top: 100px solid getColor('green-main');
         background-image: url(/src/images/bg-desk@1x.png);
     
         @include retina {
@@ -29,8 +30,8 @@
       }
 }
 
-
 .reviews__container{   
+    margin-top: -30px;
     padding-top: 0;
     padding-bottom: 393px;
 
@@ -38,6 +39,7 @@
         padding-bottom: 409px;
     }
     @include desktop {
+        margin-top: -100px;
         padding-bottom: 228px;
       }
     
@@ -46,8 +48,7 @@
 
 
 
-.reviews__img-background{  
-        margin-top: -30px;
+img.reviews__img-background{  
         border-radius: 12px;
         margin-bottom: 80px;
 
