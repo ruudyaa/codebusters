@@ -1,23 +1,23 @@
 .back-to-top {
-    position: fixed;
-    background: getColor('yellow-main');
-    color: getColor('theme-white');
-    border-radius: 50%;
-    display: flex;
-    bottom: -50px;
-    padding: 10px 12px;
-    right: 20px;
-    cursor: pointer;
-    transition: 0.3s all;
+  position: fixed;
+  background: getColor('yellow-main');
+  color: getColor('theme-white');
+  border-radius: 50%;
+  display: flex;
+  bottom: -50px;
+  padding: 10px 12px;
+  right: 20px;
+  cursor: pointer;
+  transition: 0.3s all;
 }
 
 .back-to-top.active {
-    bottom: 50px;
-    transition: 0.3s all;
+  bottom: 50px;
+  transition: 0.3s all;
 }
 
 .back-icon {
-    fill: getColor('green-main');
+  fill: getColor('green-main');
 }
 
 .btn-header {
