@@ -7,13 +7,6 @@
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .products {
-    background-image: url(../images/bg-mob@2x.png);
-  }
-}
 
 .products__container {
   text-align: center;
@@ -25,7 +18,7 @@
   font-size: 18px;
   line-height: 1.22px;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 25px;
   color: #131313;
 }
 
@@ -47,8 +40,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 123px 40px 0;
-  background: #aec6a5;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  // box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
   &:not(:last-child) {
@@ -89,16 +81,44 @@
 }
 
 // ===========   псевдоэлементы   ===================
+
+// ===   цвета лишек   ===
+
+.products-img-cream {
+  background-color: #aec6a5;
+}
+
+.products-img-coffee {
+  background-color: #efd478;
+}
+
+.products-img-shakes {
+  background-color: #d6936d;
+}
+
+// ==================================
 // ===   фото   ===
+
 .products__item::before {
   display: block;
   position: absolute;
   z-index: 100;
-  margin-top: -231px;
   content: '';
+  margin-top: -231px;
   width: 200px;
   height: 200px;
+}
+
+.products-img-cream::before {
   background: url(../images/products/cream-mob-tab@1x.png);
+}
+
+.products-img-coffee::before {
+  background: url(../images/products/coffee-mob-tab@1x.png);
+}
+
+.products-img-shakes::before {
+  background: url(../images/products/shake-mob-tab@1x.png);
 }
 
 // ===  кружочек   ===
@@ -113,7 +133,7 @@
   height: 200px;
   border-radius: 50%;
 }
-.item-before-cream::before {
+.products-cream::before {
   background: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7),
@@ -123,7 +143,7 @@
   box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
 }
 
-.item-before-coffee::before {
+.products-coffee::before {
   background: linear-gradient(
       0deg,
       rgba(248, 210, 78, 0.7),
@@ -132,7 +152,7 @@
     #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
-.item-title-shakes::before {
+.products-shakes::before {
   background: linear-gradient(
       0deg,
       rgba(213, 117, 63, 0.7),
@@ -140,6 +160,30 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+
+// ===============  медиаправило для фото бифора и фона ================
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .products {
+    background-image: url(../images/bg-mob@2x.png);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (max-width: 1199px),
+  screen and (min-resolution: 2dppx) and (max-width: 1199px) {
+  .products-img-cream {
+    background: url(../images/products/cream-mob-tab@2x.png);
+  }
+  .products-img-coffee {
+    background: url(../images/products/coffee-mob-tab@2x.png);
+  }
+  .products-img-shakes {
+    background: url(../images/products/shake-mob-tab@2x.png);
+  }
 }
 
 // /////////// +  480px  +  //////////////////////////////////
@@ -154,8 +198,7 @@
     width: 250px;
     height: 428px;
     padding: 126px 25px 0;
-    background: #aec6a5;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    // box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
   }
   .products__modal-open-btn {
@@ -165,7 +208,7 @@
 
 // /////////// -  480px  -/////////////////////////////////////////
 
-// //////////// +  768px +  /////////////////////////////////////////
+//   // //////////// +  768px +  /////////////////////////////////////////
 
 @media screen and (min-width: 768px) {
   .products {
@@ -190,11 +233,7 @@
     position: relative;
     width: 224px;
     height: 428px;
-    margin-bottom: 0px;
     padding: 108px 26px 0;
-    background: #aec6a5;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
     flex-basis: calc((100% - 32px) / 2);
 
     &:not(:last-child) {
@@ -217,7 +256,13 @@
     padding: 50px 15px 12px;
   }
 
-  // уточнить вопрос по calk!!!!!!!!
+  .products__item::before {
+    left: 17.5px;
+  }
+
+  .products__item-title::before {
+    left: 17.5px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
@@ -228,9 +273,9 @@
   }
 }
 
-// ///////////////// -  768px -  ///////////////////////////
+// // ///////////////// -  768px -  ///////////////////////////
 
-// ////////// +  1200px  + //////////////////////////////////////
+// // ////////// +  1200px  + //////////////////////////////////////
 
 @media screen and (min-width: 1200px) {
   .products {
@@ -258,7 +303,6 @@
     width: 370px;
     height: 536px;
     padding: 165px 64px 0;
-    background: #aec6a5;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     flex-basis: calc((100% - 58px) / 2);
@@ -281,13 +325,58 @@
   .products__modal-open-btn {
     padding: 50px 15px 58px;
   }
+
+  // =====  фото-бифор   ===================
+
+  .products__item::before {
+    margin-top: -341;
+    width: 302px;
+    height: 302px;
+    left: 34px;
+  }
+
+  .products-img-cream::before {
+    background: url(../images/products/cream-desk@1x.png);
+  }
+
+  .products-img-coffee::before {
+    background: url(../images/products/coffee-desk@1x.png);
+  }
+
+  .products-img-shakes::before {
+    background: url(../images/products/shake-desk@1x.png);
+  }
+
+  // ================  кружки   ===================
+
+  .products__item-title::before {
+    content: '';
+    left: 34px;
+    margin-top: -325;
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+  }
 }
+
+// =============   медиаправило фото-бифор и фон   =============
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .products {
     background-image: url(../images/bg-desk@2x.png);
+  }
+  .products-img-cream::before {
+    background: url(../images/products/cream-desk@2x.png);
+  }
+
+  .products-img-coffee::before {
+    background: url(../images/products/coffee-desk@2x.png);
+  }
+
+  .products-img-shakes::before {
+    background: url(../images/products/shake-desk@2x.png);
   }
 }
 
@@ -304,9 +393,6 @@
 //   height: 302px;
 //   background: url(../images/products/cream-desk@1x.png);
 // }
-.item-coffee {
-  background: #efd478;
-}
 
 // .item-coffee::before {
 //   display: block;
@@ -319,9 +405,6 @@
 //   height: 302px;
 //   background: url(../images/products/coffee-desk@1x.png);
 // }
-.item-shakes {
-  background: #d6936d;
-}
 
 // .item-shakes::before {
 //   display: block;
