@@ -1,13 +1,15 @@
 .contacts {
   padding-bottom: 60px;
-  margin-top: -128px;
+  margin-top: -353px;
 
   @include tablet {
     padding-bottom: 40px;
+    margin-top: -299px;
   }
 
   @include desktop {
     padding-bottom: 120px;
+    margin-top: -128px;
   }
 }
 
