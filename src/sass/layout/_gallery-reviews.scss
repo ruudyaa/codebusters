@@ -13,6 +13,7 @@
       }
 
       @include tablet {
+        border-top: 145px solid getColor('green-main');
         background-image: url(/src/images/bg-tab@1x.png);
     
         @include retina {
@@ -36,6 +37,7 @@
     padding-bottom: 393px;
 
     @include tablet {
+        margin-top: -145px;
         padding-bottom: 409px;
     }
     @include desktop {
