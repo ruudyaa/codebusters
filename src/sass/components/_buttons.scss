@@ -1,0 +1,143 @@
+.back-to-top {
+  position: fixed;
+  background: getColor('yellow-main');
+  color: getColor('theme-white');
+  border-radius: 50%;
+  display: flex;
+  bottom: -50px;
+  padding: 10px 12px;
+  right: 20px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.back-to-top.active {
+  bottom: 50px;
+  transition: 0.3s all;
+}
+
+.back-icon {
+  fill: getColor('green-main');
+}
+
+.btn-header {
+  @extend %button;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.btn-hero {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-hero_icon {
+  fill: #ffffff;
+}
+
+.btn-products {
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0 auto;
+}
+
+.btn-about {
+  @extend %button;
+}
+
+.btn-contacts {
+  @extend %button;
+  width: 196px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 16px;
+  }
+}
+
+.btn-transparent-contacts {
+  @extend %button;
+  width: 196px;
+  background-color: transparent;
+}
+
+.btn__icon {
+  margin-left: 7px;
+}
+
+// ---------Menu buttons-------------
+
+.btn-menu-burger {
+  @extend %button-menu-modal;
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.btn-menu-burger__icon {
+  fill: #ffffff;
+}
+
+.btn-menu {
+  @extend %button;
+  margin: 0 auto;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.btn-menu-close {
+  @extend %button-menu-modal;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  @media screen and (min-width: 480px) {
+    top: 20px;
+    right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    top: 32px;
+    right: 32px;
+  }
+}
+
+.btn-menu-close__icon {
+  fill: getColor('theme-white');
+}
+
+// ---------Modal buttons----------
+
+.btn-modal {
+  @extend %button;
+  margin: 0 auto;
+}
+
+.btn-modal-close {
+  @extend %button-menu-modal;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.btn-modal-close__icon {
+  fill: getColor('theme-black');
+}
