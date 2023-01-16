@@ -1,46 +1,49 @@
-<a href="#" class="open_modal-link" data-modal-open >Open product cards (test)</a>
-<div  class="backdrop visually-hidden"  data-modal>
-  <div class="product__modal">
-      <div class="product__md-close">
-        <button class="product__btnclose" type="button"  data-modal-close>
+
+<div  class="backdrop modal"  data-modal="products-card">
+  <div class="product__modal ">
+     
+        <button class="product__btnclose js-modal-close" type="button"  >
+
+
+
           <svg class="product__icon-close">
             <use href="./images/icons.svg#mobile_menu_x" width="100%"></use>
           </svg>
         </button>
-      </div>
+      
       <h4 class="product__md-title">Chololate icecream</h4>
 
-      <div class="product__modal-tumbimg"></div>
+      <div class="product__modal-box-img"></div>
 
 
 
       <ul class="product__benefit-list">
-          <li class="product_benefit-item">
-              <div class="product__benefit-tumb">
+          <li class="product__benefit-item">
+              <div class="product__benefit-box">
                   <p class="product__benefit-value">320</p>
               </div>
 
               <p class="product__benefit-descr">kcal</p>
 
           </li>
-          <li class="product_benefit-item">
-              <div class="product__benefit-tumb">
+          <li class="product__benefit-item">
+              <div class="product__benefit-box">
                   <p class="product__benefit-value">4g</p>
               </div>
 
               <p class="product__benefit-descr">Prote<span class="product__benefit-hidden">in</span>...</p>
 
           </li>
-          <li class="product_benefit-item">
-              <div class="product__benefit-tumb">
+          <li class="product__benefit-item">
+              <div class="product__benefit-box">
                   <p class="product__benefit-value">8,2g</p>
               </div>
 
               <p class="product__benefit-descr">Fats</p>
 
           </li>
-          <li class="product_benefit-item">
-              <div class="product__benefit-tumb">
+          <li class="product__benefit-item">
+              <div class="product__benefit-box">
                   <p class="product__benefit-value">40,4g</p>
               </div>
 
@@ -78,7 +81,7 @@
       </div>
       <div class="product__mdform">
           <div class="product__mdform-formfield">
-              <input class="product__mdform-input" id="name" type="text" name="product-form-name" id="name"
+              <input class="product__mdform-input" id="name" type="text" name="product-form-name"
                   pattern="[A-Za-zА-Яа-яІіЇїЄє]{1,32}" maxlength="100" required autocomplete="on"
                   placeholder=" ">
               <label for="name" class="product__mdform-label">Name</label>
@@ -98,21 +101,5 @@
       <button type="submit" class="product__md-btn btn btn-yellow">Submit</button>
   </div>
 </div>
-<script>
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("visually-hidden");
-  }
-})();
-
-  
-</script>
