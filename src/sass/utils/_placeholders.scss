@@ -51,11 +51,11 @@
   padding: 12px 35px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.21;
+  line-height: calc(17 / 14);
 
   color: getColor('button-text');
   background-color: getColor('yellow-main');
-  border-color: getColor('yellow-main');
+  border-color: transparent;
   border-radius: 10px;
 
   transition-property: color, background-color;
@@ -64,12 +64,12 @@
 
   &:hover,
   &:focus {
-    background-color: getColor('button-hover-background');
-    border-color: getColor('button-hover-background');
+    background-color: getColor('button-hover-focus');
+    border-color: getColor('button-hover-focus');
   }
   &:disabled {
-    background-color: getColor('button-disable-background');
-    border-color: getColor('button-disable-background');
+    background-color: getColor('button-disable');
+    border-color: getColor('button-disable');
   }
   &:focus {
     color: getColor('theme-white');
