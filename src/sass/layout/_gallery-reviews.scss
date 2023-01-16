@@ -33,10 +33,10 @@
 
 
 .reviews__img-background{
-    z-index: 2;
-    margin-top: -30px;
-    border-radius: 12px;
-    margin-bottom: 80px;
+        z-index: 2;
+        margin-top: -30px;
+        border-radius: 12px;
+        margin-bottom: 80px;
 
     @include tablet {
         margin-bottom: 100px;
@@ -53,22 +53,22 @@
 }
 
 .reviews__img-person{
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 50%;
-    margin-bottom: 32px;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 50%;
+        margin-bottom: 32px;
 }
 
 .reviews__item{
-    padding: 35px 39px 35px 39px;
-    margin-bottom: 32px;
-    font-size: 12px;
-    line-height: 2.58;
-    text-align: center;
-    color: #FCFCFC;
-    background-color: #84A178;
-    border-radius: 10px;
+        padding: 35px 39px 35px 39px;
+        margin-bottom: 32px;
+        font-size: 12px;
+        line-height: 2.58;
+        text-align: center;
+        color: #FCFCFC;
+        background-color: #84A178;
+        border-radius: 10px;
 
     @include tablet {
         display: flex;
@@ -95,13 +95,13 @@
         
 }
 
-.reviews__title{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.85;
-    text-align: center;
-    color: #131313;
-}
+    .reviews__title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.85;
+        text-align: center;
+        color: #131313;
+    }
 
 .slick-dots{
     bottom: -81px;
