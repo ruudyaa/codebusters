@@ -295,7 +295,27 @@
 }
 
 .button__first {
+  color: getColor('button-text');
   background-color: getColor('yellow-main');
+  border-color: getColor('yellow-main');
+  border-radius: 10px;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: getColor('button-hover-focus');
+    border-color: getColor('button-hover-focus');
+  }
+  &:disabled {
+    background-color: getColor('button-disable');
+    border-color: getColor('button-disable');
+  }
+  &:focus {
+    color: getColor('theme-white');
+  }
 
   @include tablet {
     margin-right: 16px;
@@ -305,4 +325,21 @@
 .button__two {
   border: 2px solid getColor('yellow-main');
   background-color: transparent;
+  color: getColor('button-text');
+  border-radius: 10px;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: getColor('button-hover-focus');
+  }
+  &:disabled {
+    border-color: getColor('button-disable');
+  }
+  &:focus {
+    color: getColor('theme-white');
+  }
 }
