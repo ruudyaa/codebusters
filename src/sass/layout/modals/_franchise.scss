@@ -116,7 +116,7 @@
   padding: 8px 12px 7px 12px;
   outline: none;
   margin-bottom: 16px;
-  background: rgba(248, 210, 78, 0.1);
+  background-color: rgba(248, 210, 78, 0.1);
   border: 1px solid getColor('green-main');
   border-radius: 10px;
 
@@ -140,7 +140,7 @@
 
 .form-contacts__textarea {
   resize: none;
-  background: rgba(248, 210, 78, 0.1);
+  background-color: rgba(248, 210, 78, 0.1);
   border: 1px solid getColor('green-main');
   border-radius: 10px;
   padding: 8px 48px 39px 12px;
@@ -148,6 +148,7 @@
   height: 64px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 
   @include tablet {
     width: 368px;
@@ -215,7 +216,7 @@
   color: getColor('theme-black');
 
   @include tablet {
-    top: 45%;
+    top: 43%;
     left: 5%;
     font-size: 14px;
     line-height: calc(20 / 14);

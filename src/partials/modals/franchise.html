@@ -20,6 +20,7 @@
             class="form-contacts__input"
             name="name"
             id="name"
+            required
             pattern="[A-Za-z] {1,15]"
             placeholder=" "
           />
@@ -30,6 +31,7 @@
             class="form-contacts__input"
             name="tel"
             id="tel"
+            required
             placeholder=" "
             pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
           />
@@ -40,6 +42,7 @@
             class="form-contacts__input"
             name="email"
             id="email"
+            required
             autocomplete="off"
             placeholder=" "
             pattern="[a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}"
@@ -51,7 +54,7 @@
             class="form-contacts__textarea"
             name="comment"
             id="comment"
-            rows="5"
+            rows="1"
             placeholder=" "
           ></textarea>
           <label for="comment" class="form-contacts__label">Comment</label>
