@@ -50,4 +50,7 @@
 .header__buttons {
   display: flex;
   align-items: flex-end;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: inline-block;
+  }
 }

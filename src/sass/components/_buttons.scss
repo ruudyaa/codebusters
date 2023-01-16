@@ -69,6 +69,10 @@
 
 .btn__icon {
   margin-left: 7px;
+
+  &:focus {
+    fill: #ffffff;
+  }
 }
 
 // ---------Menu buttons-------------
