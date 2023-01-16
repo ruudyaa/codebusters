@@ -62,14 +62,16 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  cursor: pointer;
+
   &:hover,
   &:focus {
     background-color: getColor('button-hover-focus');
-    border-color: getColor('button-hover-focus');
+    border-color: transparent;
   }
   &:disabled {
     background-color: getColor('button-disable');
-    border-color: getColor('button-disable');
+    border-color: transparent;
   }
   &:focus {
     color: getColor('theme-white');

@@ -126,41 +126,47 @@ img.reviews__img-background{
 .slick-dots li {
     width: 12px;
     height: 12px;
-    margin: 0 18px;
+    margin: 0 9px;
     border-radius: 50%;
-    background-color: #D9D9D9;
-    cursor: pointer;
-      
+
 }
 
 .slick-dots li button{
     width: 12px;
     height: 12px;
-    padding: 5px;
+    
 }
 
-.slick-prev:before, .slick-next:before{
-    display: none;
-}
 
 .slick-dots li button:before{
+    color: gray;
     width: 12px;
     height: 12px;
-    padding: 10px;
+    
 }
 
-
-
-.slick-dots li.slick-active button:before{
-    background-color: getColor('green-main');
-    color: getColor('green-main');
+button:before {
+    color: transparent;
+    background-color: gray;
     border-radius: 50%;
     width: 12px;
     height: 12px;
 }
 
-.slick-dots li button:before {
-    color: #D9D9D9;
+.slick-dots li.slick-active button:before{
+    background-color: getColor('green-main');
+    color: transparent;
+    border-radius: 50%;
+    
 }
+
+.slick-next:before{
+    display: none;
+}
+
+.slick-prev:before{
+    display: none;
+}
+
 
 
