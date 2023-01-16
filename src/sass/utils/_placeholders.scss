@@ -12,26 +12,24 @@
   /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
-  
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transition: .3s all;
+  transition: 0.3s all;
 }
-
 
 /* Стили для модальных окон */
 
 .modal {
-  
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-  
+
   /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
@@ -40,11 +38,49 @@
   z-index: 30; /* Должен быть выше чем у подложки*/
 }
 
-
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
-.overlay.active{
+.overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+%button {
+  height: 42px;
+  padding: 12px 35px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: getColor('button-text');
+  background-color: getColor('yellow-main');
+  border-color: getColor('yellow-main');
+  border-radius: 10px;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: getColor('button-hover-background');
+    border-color: getColor('button-hover-background');
+  }
+  &:disabled {
+    background-color: getColor('button-disable-background');
+    border-color: getColor('button-disable-background');
+  }
+  &:focus {
+    color: getColor('theme-white');
+  }
+}
+
+%button-menu-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border-color: transparent;
 }
