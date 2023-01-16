@@ -1,18 +1,19 @@
 .header {
-  padding: 14px;
-
+  padding-top: 12px;
+  @media screen and (min-width: 480px) {
+    padding-top: 14px;
+  }
   @media screen and (min-width: 768px) {
-    padding: 24px;
+    padding-top: 20px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 0;
+    padding-top: 0;
   }
 }
 
 .container--header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navigation-list {
@@ -30,10 +31,10 @@
 
 .navigation-list__link {
   display: block;
-  padding: 40px 0px;
+  padding: 40px 0 13px;
 
   font-weight: 700;
-  line-height: 1.25;
+  line-height: calc(20 / 16);
   color: getColor('theme-white');
 
   transition-property: color;
@@ -48,5 +49,5 @@
 
 .header__buttons {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
