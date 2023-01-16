@@ -1,8 +1,8 @@
 
 
 
-.reviews__background{
-    background-color: getColor('green-main');
+.reviews{
+    
     background-image: url(/src/images/bg-mob@1x.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,16 +30,23 @@
 }
 
 
-.reviews__container{
-    
-    padding-top: 0px;
+.reviews__container{   
+    padding-top: 0;
     padding-bottom: 393px;
+
+    @include tablet {
+        padding-bottom: 409px;
+    }
+    @include desktop {
+        padding-bottom: 228px;
+      }
     
 }
 
 
-.reviews__img-background{
-    
+
+
+.reviews__img-background{  
         margin-top: -30px;
         border-radius: 12px;
         margin-bottom: 80px;
