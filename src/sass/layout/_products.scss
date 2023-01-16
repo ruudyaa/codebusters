@@ -3,9 +3,9 @@
   padding-bottom: 60px;
   text-align: center;
   background-image: url(../images/bg-mob@1x.png);
-    @include retina {
-      background-image: url(../images/bg-mob@2x.png);
-    }
+  @include retina {
+    background-image: url(../images/bg-mob@2x.png);
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,10 +17,10 @@
   }
   @include desktop {
     background-image: url(../images/bg-desk@1x.png);
-    }
+  }
   @include retina {
     background-image: url(../images/bg-desk@2x.png);
-    }
+  }
 }
 .products__suptitle {
   font-weight: 800;
@@ -30,7 +30,8 @@
   margin-bottom: 25px;
   color: #131313;
   @include tablet {
-    font-size: 22px;}
+    font-size: 22px;
+  }
   @include desktop {
     font-size: 30px;
     letter-spacing: 0.04em;
@@ -60,14 +61,14 @@
 .products__list {
   @include tablet {
     display: flex;
-      justify-content: center;
-      column-gap: 16px;
+    justify-content: center;
+    column-gap: 16px;
   }
-    @include desktop {
-      display: flex;
-        justify-content: space-between;
-        column-gap: 29px;
-    }
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 29px;
+  }
 }
 .products__item {
   position: relative;
@@ -88,46 +89,55 @@
     margin-top: -231px;
     width: 200px;
     height: 200px;
+  }
+  @include mobile {
+    position: relative;
+    width: 250px;
+    height: 428px;
+    padding: 126px 25px 0;
+    border-radius: 24px;
+  }
+  @include tablet {
+    position: relative;
+    width: 224px;
+    height: 428px;
+    padding: 108px 26px 0;
+    flex-basis: calc((100% - 32px) / 2);
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
     }
-    @include mobile {
-      position: relative;
-        width: 250px;
-        height: 428px;
-        padding: 126px 25px 0;
-        border-radius: 24px;
-    }
-    @include tablet{
-      position: relative;
-        width: 224px;
-        height: 428px;
-        padding: 108px 26px 0;
-        flex-basis: calc((100% - 32px) / 2);
-      
-        &:not(:last-child) {
-          margin-bottom: 0px;
-        }
     &::before {
-      left: 17.5px;}
+      left: 17.5px;
     }
-    @include desktop{
-      position: relative;
-        width: 370px;
-        height: 536px;
-        padding: 165px 64px 0;
-        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-        border-radius: 24px;
-        flex-basis: calc((100% - 58px) / 2);
+  }
+  @include desktop {
+    position: relative;
+    width: 370px;
+    height: 536px;
+    padding: 165px 64px 0;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    flex-basis: calc((100% - 58px) / 2);
     &::before {
-        margin-top: -341;
-        width: 302px;
-        height: 302px;
-        left: 34px;}
+      margin-top: -341;
+      width: 302px;
+      height: 302px;
+      left: 34px;
     }
+  }
 }
 .products__item-wrapper {
   width: 200px;
   height: 148px;
+  margin-bottom: 53px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 61px;
+  }
+
   @include tablet {
+    margin-bottom: 50px;
     width: 172px;
     height: 175px;
   }
@@ -143,7 +153,7 @@
   text-transform: uppercase;
   margin-bottom: 40px;
   color: #131313;
-&::before {
+  &::before {
     display: block;
     position: absolute;
     z-index: 99;
@@ -155,17 +165,17 @@
   }
   @include tablet {
     font-size: 22px;
-      line-height: 27px;
-      margin-bottom: 40px;
-      &::before {
-          left: 17.5px;
-        }
+    line-height: 27px;
+    margin-bottom: 40px;
+    &::before {
+      left: 17.5px;
+    }
   }
-  @include desktop{
-font-size: 30px;
-  line-height: 37px;
-  margin-bottom: 66px;
-  &::before {
+  @include desktop {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 66px;
+    &::before {
       content: '';
       left: 34px;
       margin-top: -325;
@@ -180,43 +190,50 @@ font-size: 30px;
   line-height: 1.79;
   letter-spacing: 0.04em;
   color: #131313;
+
   @include desktop {
     font-size: 16px;
   }
 }
 .products__modal-open-btn {
   display: inline-block;
-  padding: 53px 15px 16px;
+  margin-bottom: 16px;
+  // padding: 53px 15px 16px;
+  padding: 0 15px 16px;
   cursor: pointer;
   border: none;
   background-color: transparent;
   @include mobile {
-    padding: 61px 15px 16px;
+    // padding: 61px 15px 16px;
+    padding: 0 15px 16px;
   }
   @include tablet {
-    padding: 50px 15px 12px;
+    // padding: 50px 15px 12px;
+    padding: 0 15px 12px;
   }
   @include desktop {
-    padding: 50px 15px 58px;
+    // padding: 50px 15px 58px;
+    padding: 0 15px 58px;
+    margin-bottom: 60px;
   }
 }
 .products-img-cream {
   background-color: #aec6a5;
-&::before {
+  &::before {
     background: url(../images/products/cream-mob-tab@1x.png);
   }
 }
 .products-img-coffee {
   background-color: #efd478;
   &::before {
-      background: url(../images/products/coffee-mob-tab@1x.png);
-    }
+    background: url(../images/products/coffee-mob-tab@1x.png);
+  }
 }
 .products-img-shakes {
   background-color: #d6936d;
   &::before {
-      background: url(../images/products/shake-mob-tab@1x.png);
-    }
+    background: url(../images/products/shake-mob-tab@1x.png);
+  }
 }
 
 .products-cream::before {
@@ -250,7 +267,6 @@ font-size: 30px;
 
 // ===============  медиаправило для фото бифора и фона ================
 
-
 // @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
 //   screen and (min-resolution: 192dpi) and (max-width: 1199px),
 //   screen and (min-resolution: 2dppx) and (max-width: 1199px) {
@@ -264,7 +280,6 @@ font-size: 30px;
 //     background: url(../images/products/shake-mob-tab@2x.png);
 //   }
 // }
-
 
 // // ////////// +  1200px  + //////////////////////////////////////
 
@@ -280,7 +295,6 @@ font-size: 30px;
     background: url(../images/products/shake-desk@1x.png);
   }
 }
-
 
 //   .products-img-cream::before {
 //     background: url(../images/products/cream-desk@2x.png);
