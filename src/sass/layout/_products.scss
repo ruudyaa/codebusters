@@ -1,38 +1,74 @@
 .products {
-  // max-width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
   background-image: url(../images/bg-mob@1x.png);
+    @include retina {
+      background-image: url(../images/bg-mob@2x.png);
+    }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include tablet {
+    background-image: url(../images/bg-tab@1x.png);
+  }
+  @include retina {
+    background-image: url(../images/bg-tab@2x.png);
+  }
+  @include desktop {
+    background-image: url(../images/bg-desk@1x.png);
+    }
+  @include retina {
+    background-image: url(../images/bg-desk@2x.png);
+    }
 }
-
-.products__container {
-  text-align: center;
-}
-
 .products__suptitle {
-  font-family: 'Montserrat';
   font-weight: 800;
   font-size: 18px;
   line-height: 1.22px;
   text-transform: uppercase;
   margin-bottom: 25px;
   color: #131313;
+  @include tablet {
+    font-size: 22px;}
+  @include desktop {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
 }
-
 .products__title {
   font-family: 'Seymour One';
-  font-weight: 400;
   font-size: 30px;
   line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
   margin-bottom: 148px;
+  @include mobile {
+    margin-bottom: 145px;
+  }
+  @include tablet {
+    font-size: 34px;
+    margin-bottom: 200px;
+  }
+  @include desktop {
+    font-size: 36px;
+    letter-spacing: 0.06em;
+    margin-bottom: 303px;
+  }
 }
-
+.products__list {
+  @include tablet {
+    display: flex;
+      justify-content: center;
+      column-gap: 16px;
+  }
+    @include desktop {
+      display: flex;
+        justify-content: space-between;
+        column-gap: 29px;
+    }
+}
 .products__item {
   position: relative;
   width: 280px;
@@ -40,99 +76,149 @@
   margin-left: auto;
   margin-right: auto;
   padding: 123px 40px 0;
-  // box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-
   &:not(:last-child) {
     margin-bottom: 168px;
   }
+  &::before {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    content: '';
+    margin-top: -231px;
+    width: 200px;
+    height: 200px;
+    }
+    @include mobile {
+      position: relative;
+        width: 250px;
+        height: 428px;
+        padding: 126px 25px 0;
+        border-radius: 24px;
+    }
+    @include tablet{
+      position: relative;
+        width: 224px;
+        height: 428px;
+        padding: 108px 26px 0;
+        flex-basis: calc((100% - 32px) / 2);
+      
+        &:not(:last-child) {
+          margin-bottom: 0px;
+        }
+    &::before {
+      left: 17.5px;}
+    }
+    @include desktop{
+      position: relative;
+        width: 370px;
+        height: 536px;
+        padding: 165px 64px 0;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        flex-basis: calc((100% - 58px) / 2);
+    &::before {
+        margin-top: -341;
+        width: 302px;
+        height: 302px;
+        left: 34px;}
+    }
 }
-
 .products__item-wrapper {
   width: 200px;
   height: 148px;
+  @include tablet {
+    width: 172px;
+    height: 175px;
+  }
+  @include desktop {
+    width: 246px;
+    height: 142px;
+  }
 }
-
 .products__item-title {
-  font-family: 'Montserrat';
   font-size: 20px;
-  line-height: 24px;
+  line-height: calc(24 / 20);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 40px;
   color: #131313;
+&::before {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    margin-top: -220px;
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  @include tablet {
+    font-size: 22px;
+      line-height: 27px;
+      margin-bottom: 40px;
+      &::before {
+          left: 17.5px;
+        }
+  }
+  @include desktop{
+font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 66px;
+  &::before {
+      content: '';
+      left: 34px;
+      margin-top: -325;
+      width: 302px;
+      height: 302px;
+      border-radius: 50%;
+    }
+  }
 }
-
 .products__item-text {
-  font-family: 'Montserrat';
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.79;
   letter-spacing: 0.04em;
   color: #131313;
+  @include desktop {
+    font-size: 16px;
+  }
 }
-
 .products__modal-open-btn {
   display: inline-block;
   padding: 53px 15px 16px;
   cursor: pointer;
   border: none;
   background-color: transparent;
+  @include mobile {
+    padding: 61px 15px 16px;
+  }
+  @include tablet {
+    padding: 50px 15px 12px;
+  }
+  @include desktop {
+    padding: 50px 15px 58px;
+  }
 }
-
-// ===========   псевдоэлементы   ===================
-
-// ===   цвета лишек   ===
-
 .products-img-cream {
   background-color: #aec6a5;
+&::before {
+    background: url(../images/products/cream-mob-tab@1x.png);
+  }
 }
-
 .products-img-coffee {
   background-color: #efd478;
+  &::before {
+      background: url(../images/products/coffee-mob-tab@1x.png);
+    }
 }
-
 .products-img-shakes {
   background-color: #d6936d;
+  &::before {
+      background: url(../images/products/shake-mob-tab@1x.png);
+    }
 }
 
-// ==================================
-// ===   фото   ===
-
-.products__item::before {
-  display: block;
-  position: absolute;
-  z-index: 100;
-  content: '';
-  margin-top: -231px;
-  width: 200px;
-  height: 200px;
-}
-
-.products-img-cream::before {
-  background: url(../images/products/cream-mob-tab@1x.png);
-}
-
-.products-img-coffee::before {
-  background: url(../images/products/coffee-mob-tab@1x.png);
-}
-
-.products-img-shakes::before {
-  background: url(../images/products/shake-mob-tab@1x.png);
-}
-
-// ===  кружочек   ===
-
-.products__item-title::before {
-  display: block;
-  position: absolute;
-  z-index: 99;
-  margin-top: -220px;
-  content: '';
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
 .products-cream::before {
   background: linear-gradient(
       0deg,
@@ -164,13 +250,6 @@
 
 // ===============  медиаправило для фото бифора и фона ================
 
-// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-//   screen and (min-resolution: 192dpi) and (max-width: 767px),
-//   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-//   .products {
-//     background-image: url(../images/bg-mob@2x.png);
-//   }
-// }
 
 // @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
 //   screen and (min-resolution: 192dpi) and (max-width: 1199px),
@@ -186,187 +265,23 @@
 //   }
 // }
 
-// /////////// +  480px  +  //////////////////////////////////
-
-@media screen and (min-width: 480px) {
-  .products__title {
-    margin-bottom: 145px;
-  }
-
-  .products__item {
-    position: relative;
-    width: 250px;
-    height: 428px;
-    padding: 126px 25px 0;
-    // box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-  }
-  .products__modal-open-btn {
-    padding: 61px 15px 16px;
-  }
-}
-
-// /////////// -  480px  -/////////////////////////////////////////
-
-//   // //////////// +  768px +  /////////////////////////////////////////
-
-@media screen and (min-width: 768px) {
-  .products {
-    background-image: url(../images/bg-tab@1x.png);
-  }
-
-  .products__suptitle {
-    font-size: 22px;
-  }
-
-  .products__title {
-    font-size: 34px;
-    margin-bottom: 200px;
-  }
-  .products__list {
-    display: flex;
-    justify-content: center;
-    column-gap: 16px;
-  }
-
-  .products__item {
-    position: relative;
-    width: 224px;
-    height: 428px;
-    padding: 108px 26px 0;
-    flex-basis: calc((100% - 32px) / 2);
-
-    &:not(:last-child) {
-      margin-bottom: 0px;
-    }
-  }
-
-  .products__item-wrapper {
-    width: 172px;
-    height: 175px;
-  }
-
-  .products__item-title {
-    font-size: 22px;
-    line-height: 27px;
-    margin-bottom: 40px;
-  }
-
-  .products__modal-open-btn {
-    padding: 50px 15px 12px;
-  }
-
-  .products__item::before {
-    left: 17.5px;
-  }
-
-  .products__item-title::before {
-    left: 17.5px;
-  }
-}
-
-// @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
-//   screen and (min-resolution: 192dpi) and (min-width: 767px),
-//   screen and (min-resolution: 2dppx) and (min-width: 767px) {
-//   .products {
-//     background-image: url(../images/bg-tab@2x.png);
-//   }
-// }
-
-// // ///////////////// -  768px -  ///////////////////////////
 
 // // ////////// +  1200px  + //////////////////////////////////////
 
 @media screen and (min-width: 1200px) {
-  .products {
-    background-image: url(../images/bg-desk@1x.png);
-  }
-
-  .products__suptitle {
-    font-size: 30px;
-    letter-spacing: 0.04em;
-  }
-  .products__title {
-    font-size: 36px;
-    letter-spacing: 0.06em;
-    margin-bottom: 303px;
-  }
-
-  .products__list {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 29px;
-  }
-
-  .products__item {
-    position: relative;
-    width: 370px;
-    height: 536px;
-    padding: 165px 64px 0;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    flex-basis: calc((100% - 58px) / 2);
-  }
-  .products__item-title {
-    font-size: 30px;
-    line-height: 37px;
-    margin-bottom: 66px;
-  }
-
-  .products__item-wrapper {
-    width: 246px;
-    height: 142px;
-  }
-
-  .products__item-text {
-    font-size: 16px;
-  }
-
-  .products__modal-open-btn {
-    padding: 50px 15px 58px;
-  }
-
   // =====  фото-бифор   ===================
-
-  .products__item::before {
-    margin-top: -341;
-    width: 302px;
-    height: 302px;
-    left: 34px;
-  }
-
   .products-img-cream::before {
     background: url(../images/products/cream-desk@1x.png);
   }
-
   .products-img-coffee::before {
     background: url(../images/products/coffee-desk@1x.png);
   }
-
   .products-img-shakes::before {
     background: url(../images/products/shake-desk@1x.png);
   }
-
-  // ================  кружки   ===================
-
-  .products__item-title::before {
-    content: '';
-    left: 34px;
-    margin-top: -325;
-    width: 302px;
-    height: 302px;
-    border-radius: 50%;
-  }
 }
 
-// =============   медиаправило фото-бифор и фон   =============
 
-// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-//   screen and (min-resolution: 192dpi) and (min-width: 1200px),
-//   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-//   .products {
-//     background-image: url(../images/bg-desk@2x.png);
-// //   }
 //   .products-img-cream::before {
 //     background: url(../images/products/cream-desk@2x.png);
 //   }
