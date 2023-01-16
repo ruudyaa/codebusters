@@ -66,6 +66,7 @@
         font-weight: 600;
         font-size: 12px;
         line-height: calc(15 / 12);
+        background-color: inherit;
 
         @include desktop{
             font-size: 14px;
@@ -79,7 +80,6 @@
         height: 38px;
         border: 2px solid getColor('yellow-main');
         border-radius: 8px;
-        padding: 12px 34px;
 
         &:hover {
             border: 2px solid getColor('button-hover-focus');
@@ -90,10 +90,12 @@
         }
         
         @media screen and (max-width:1199){
+            padding: 11px 26px;
             margin-right: 12px;
         }
 
         @include desktop {
+            padding: 12px 34px;
             margin-right: 34px;
             border-radius: 10px;
             width: 134px;
@@ -104,6 +106,7 @@
     &__btn--made {
         text-decoration-line: underline;
         color: getColor('yellow-main');
+        border: none;
 
         &:hover {
             color: getColor('button-hover-focus');
