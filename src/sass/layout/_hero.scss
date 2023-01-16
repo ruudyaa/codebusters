@@ -80,6 +80,14 @@
         border: 2px solid getColor('yellow-main');
         border-radius: 8px;
         padding: 12px 34px;
+
+        &:hover {
+            border: 2px solid getColor('button-hover-focus');
+        }
+
+        &:focus {
+            color: getColor('theme-white');
+        }
         
         @media screen and (max-width:1199){
             margin-right: 12px;
@@ -87,12 +95,23 @@
 
         @include desktop {
             margin-right: 34px;
+            border-radius: 10px;
+            width: 134px;
+            height: 42px;
         }
     }
 
     &__btn--made {
         text-decoration-line: underline;
         color: getColor('yellow-main');
+
+        &:hover {
+            color: getColor('button-hover-focus');
+        }
+
+        &:focus {
+            color: getColor('theme-white');
+        }
     }
 
     &__counter {
