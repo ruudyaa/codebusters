@@ -65,11 +65,11 @@
   &:hover,
   &:focus {
     background-color: getColor('button-hover-focus');
-    border-color: getColor('button-hover-focus');
+    border-color: transparent;
   }
   &:disabled {
     background-color: getColor('button-disable');
-    border-color: getColor('button-disable');
+    border-color: transparent;
   }
   &:focus {
     color: getColor('theme-white');
