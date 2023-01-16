@@ -1,7 +1,10 @@
 $('.one-time').slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000
   });
