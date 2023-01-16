@@ -164,27 +164,27 @@
 
 // ===============  медиаправило для фото бифора и фона ================
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .products {
-    background-image: url(../images/bg-mob@2x.png);
-  }
-}
+// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//   screen and (min-resolution: 192dpi) and (max-width: 767px),
+//   screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//   .products {
+//     background-image: url(../images/bg-mob@2x.png);
+//   }
+// }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
-  screen and (min-resolution: 192dpi) and (max-width: 1199px),
-  screen and (min-resolution: 2dppx) and (max-width: 1199px) {
-  .products-img-cream {
-    background: url(../images/products/cream-mob-tab@2x.png);
-  }
-  .products-img-coffee {
-    background: url(../images/products/coffee-mob-tab@2x.png);
-  }
-  .products-img-shakes {
-    background: url(../images/products/shake-mob-tab@2x.png);
-  }
-}
+// @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
+//   screen and (min-resolution: 192dpi) and (max-width: 1199px),
+//   screen and (min-resolution: 2dppx) and (max-width: 1199px) {
+//   .products-img-cream {
+//     background: url(../images/products/cream-mob-tab@2x.png);
+//   }
+//   .products-img-coffee {
+//     background: url(../images/products/coffee-mob-tab@2x.png);
+//   }
+//   .products-img-shakes {
+//     background: url(../images/products/shake-mob-tab@2x.png);
+//   }
+// }
 
 // /////////// +  480px  +  //////////////////////////////////
 
@@ -265,13 +265,13 @@
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
-  screen and (min-resolution: 192dpi) and (min-width: 767px),
-  screen and (min-resolution: 2dppx) and (min-width: 767px) {
-  .products {
-    background-image: url(../images/bg-tab@2x.png);
-  }
-}
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
+//   screen and (min-resolution: 192dpi) and (min-width: 767px),
+//   screen and (min-resolution: 2dppx) and (min-width: 767px) {
+//   .products {
+//     background-image: url(../images/bg-tab@2x.png);
+//   }
+// }
 
 // // ///////////////// -  768px -  ///////////////////////////
 
@@ -361,24 +361,24 @@
 
 // =============   медиаправило фото-бифор и фон   =============
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .products {
-    background-image: url(../images/bg-desk@2x.png);
-  }
-  .products-img-cream::before {
-    background: url(../images/products/cream-desk@2x.png);
-  }
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//   screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//   .products {
+//     background-image: url(../images/bg-desk@2x.png);
+// //   }
+//   .products-img-cream::before {
+//     background: url(../images/products/cream-desk@2x.png);
+//   }
 
-  .products-img-coffee::before {
-    background: url(../images/products/coffee-desk@2x.png);
-  }
+//   .products-img-coffee::before {
+//     background: url(../images/products/coffee-desk@2x.png);
+//   }
 
-  .products-img-shakes::before {
-    background: url(../images/products/shake-desk@2x.png);
-  }
-}
+//   .products-img-shakes::before {
+//     background: url(../images/products/shake-desk@2x.png);
+//   }
+// }
 
 //////////////// -  1200 -  //////////////////////////////////
 
