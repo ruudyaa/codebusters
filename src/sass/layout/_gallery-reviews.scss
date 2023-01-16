@@ -133,8 +133,20 @@ img.reviews__img-background{
       
 }
 
+.slick-dots li button{
+    width: 12px;
+    height: 12px;
+    padding: 5px;
+}
+
 .slick-prev:before, .slick-next:before{
     display: none;
+}
+
+.slick-dots li button:before{
+    width: 12px;
+    height: 12px;
+    padding: 10px;
 }
 
 
