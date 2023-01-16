@@ -1,0 +1,46 @@
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <img
+    srcset="
+      ./images/header/logo-tab@1x.png 48w,
+      ./images/header/logo-tab@2x.png 96w,
+      ./images/header/logo-mob@1x.png 40w,
+      ./images/header/logo-mob@2x.png 80w
+    "
+    sizes="(min-width: 480px) 48px, 40px"
+    src="./images/header/logo-mob@1x.png"
+    alt="logo"
+    class="logo-menu"
+  />
+  <button class="btn-menu-close js-close-menu">
+    <svg
+      width="19"
+      height="19"
+      aria-label="mobile menu switch"
+      class="btn-menu-close__icon"
+    >
+      <use href="./images/icons.svg#mobile_menu_x"></use>
+    </svg>
+  </button>
+  <nav class="menu">
+    <ul class="navigation-list-menu">
+      <li class="navigation-list-menu__item">
+        <a href="#home" class="navigation-list-menu__link">Home</a>
+      </li>
+      <li class="navigation-list-menu__item">
+        <a href="#about" class="navigation-list-menu__link">How it’s made?</a>
+      </li>
+      <li class="navigation-list-menu__item">
+        <a href="#products" class="navigation-list-menu__link">Our products</a>
+      </li>
+      <li class="navigation-list-menu__item">
+        <a href="#contact" class="navigation-list-menu__link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <button type="button" class="btn-menu js-open-modal" data-modal="buy-now">
+    Buy now
+    <svg width="6" height="10" class="btn__icon">
+      <use href="./images/icons.svg#semi_arrow"></use>
+    </svg>
+  </button>
+</div>
