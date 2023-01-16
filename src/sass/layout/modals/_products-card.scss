@@ -72,10 +72,13 @@
 }
 
 .product__md-close{
+    position:absolute;
+    top:12px;
+    right:12px;
     display: block;
     margin-left: auto;
-    margin-right: -16px;
-    margin-top: -8px;
+    // margin-right: -16px;
+    // margin-top: -8px;
     border: none;
     // ion: all 300ms linear;
   
@@ -85,8 +88,8 @@
 @media screen and (min-width: 1200px) {
     .product__md-close{
 
-    margin-right: -28px;
-    margin-top: -20px;
+    // margin-right: -28px;
+    // margin-top: -20px;
    
 }
 }
