@@ -108,7 +108,7 @@
 
   @include tablet {
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 }
 
@@ -134,7 +134,7 @@
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 16px;
-    margin-bottom: 12px;
+    margin-bottom: 17px;
   }
 }
 
@@ -216,7 +216,7 @@
   color: getColor('theme-black');
 
   @include tablet {
-    top: 43%;
+    top: 38%;
     left: 5%;
     font-size: 14px;
     line-height: calc(20 / 14);
@@ -229,7 +229,7 @@
   color: getColor('orange-main');
 
   @include tablet {
-    transform: translateX(-150%);
+    transform: translateY(-200%);
     color: getColor('orange-main');
   }
 }
@@ -240,7 +240,7 @@
   color: getColor('orange-main');
 
   @include tablet {
-    transform: translateX(-150%);
+    transform: translateY(-200%);
     color: getColor('orange-main');
   }
 }
