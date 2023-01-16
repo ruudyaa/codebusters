@@ -155,7 +155,7 @@
         }
 
         &:focus{
-            background-color: getColor('yellow-main');
+            border-color: getColor('yellow-main');
         }
     }
 
@@ -176,6 +176,10 @@
         margin-bottom: 26px;
 
         resize: none;
+
+        &:focus{
+            border-color: getColor('yellow-main');
+        }
 
         @include tablet {
             width: 328px;
