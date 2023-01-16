@@ -11,7 +11,7 @@
   z-index: 3;
   overflow-y: auto;
   scale:1;
-  transition:all 200ms linear;
+//   transition:all 200ms linear;
 }
 // _________________ технычна 
 .open_modal-link{
@@ -61,7 +61,7 @@
     scale:1;
     padding: 28px 20px;
 
-    transition:all 300ms linear;
+    // transition:all 300ms linear;
      
 }
 
@@ -75,32 +75,51 @@
     display: block;
     margin-left: auto;
     margin-right: -16px;
-    margin-top: -16px;
+    margin-top: -8px;
     border: none;
-    transition: all 300ms linear;
+    // ion: all 300ms linear;
+  
+}
+ 
+
+@media screen and (min-width: 1200px) {
+    .product__md-close{
+
+    margin-right: -28px;
+    margin-top: -20px;
+   
+}
 }
 
 .product__btnclose{
   border:none;
+  display: block;
+  background-color: transparent; 
+  padding: 4px;
+}
+@media screen and (min-width: 1200px) {
+    .product__btnclose{
+       padding: 5px;
+}
 }
 
+.product__icon-close{
+    display:block;
+    width: 12px;
+    height: 12px;
+    scale: 1;
+}
 @media screen and (min-width: 1200px) {
     .product__icon-close{
-        width: 24px;
-        height: 24px;
+        width: 14px;
+        height: 14px;
         scale: 1;
     }
 }
-.product__icon-close{
-    display:block;
-    width: 20px;
-    height: 20px;
-    scale: 1;
-}
 .product__md-close:hover{
-    transform:rotate(180deg);
-    scale: 0.7;
-    transition: all 300ms linear;
+    // transform:rotate(180deg);
+    // scale: 0.7;
+    // transition: all 300ms linear;
 }
 .product__md-title{
     font-family: 'Seymour One';
@@ -141,7 +160,7 @@
     width:100%;
     height: 100%;
     top: -7px; 
-    transition: all 300ms linear;
+    ion: all 300ms linear;
     background-image: url(../images/modal/ice-cream-modal@1x.png);
 
     @include retina {
@@ -150,8 +169,8 @@
 }
 
 .product__modal-tumbimg:hover.product__modal-tumbimg:before { 
-  transform: rotateY(180deg);
-  transition: all 300ms linear;
+//   transform: rotateY(180deg);
+//   transition: all 300ms linear;
 }
 
 .product__benefit-list{
@@ -164,16 +183,16 @@
     }
 }
 .product_benefit-item:hover  {
-  font-weight: 500;
-  perspective: 300px;
-  transform: rotatez(360deg);
-  transition: all 300ms linear;
+//   font-weight: 500;
+//   perspective: 300px;
+//   transform: rotatez(360deg);
+//   transition: all 300ms linear;
 }
 .product_benefit-item{
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all 300ms linear;
+    // transition: all 300ms linear;
     width: 53px;
     height: 72px;
     border: 2px solid #9CBE8F;
@@ -283,11 +302,11 @@
 
 }
 .product__md-ingred-tabl:hover{
-  box-shadow: 0px 6px 20px rgba(10, 36, 23, 0.1);
-  background-image: url(../images/bg-mob@1x.png);
-  background-size: 70%;
-  background-position:  0px -70px;
-   transition: all 300ms linear;
+//   box-shadow: 0px 6px 20px rgba(10, 36, 23, 0.1);
+//   background-image: url(../images/bg-mob@1x.png);
+//   background-size: 70%;
+//   background-position:  0px -70px;
+// //    transition: all 300ms linear;
 }
 
 .product__ingred-descr{
@@ -364,7 +383,7 @@ margin-bottom: 11px;
     top: 50%;
     transform: translatey(-50%);
     background: #FCFCFC;
-    transition: top 300ms linear;
+    // transition: top 300ms linear;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.40;
@@ -422,7 +441,7 @@ content:"(+xxx-xxxxxxxxxx)"
     left: 16px;
     top: 18px;
     transform: translatey(-50%);
-    transition: top 300ms linear;
+    // transition: top 300ms linear;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.40;
@@ -450,7 +469,7 @@ content:"(+xxx-xxxxxxxxxx)"
     width: 132px;
     height: 42px;
     border-radius: 10px;
-    transition: all 300ms linear;
+    // transition: all 300ms linear;
 
 
 }
@@ -477,7 +496,7 @@ content:"(+xxx-xxxxxxxxxx)"
     color: getColor(‘theme-black’);
     border-color:getColor('yellow-main');
     border-width: 2px;
-    transition: all 300ms linear;
+    // transition: all 300ms linear;
 }
 .btn:disabled{
     background: getColor( 'button-disable');
