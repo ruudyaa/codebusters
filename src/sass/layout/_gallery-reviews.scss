@@ -1,7 +1,12 @@
 
-.reviews{
-    background-color: #FCFCFC;
+
+
+.reviews__background{
+    background-color: getColor('green-main');
     background-image: url(/src/images/bg-mob@1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     @include retina {
         background-image: url(/src/images/bg-mob@2x.png);
@@ -26,6 +31,7 @@
 
 
 .reviews__container{
+    
     padding-top: 0px;
     padding-bottom: 393px;
     
@@ -33,7 +39,7 @@
 
 
 .reviews__img-background{
-        z-index: 2;
+    
         margin-top: -30px;
         border-radius: 12px;
         margin-bottom: 80px;
@@ -67,7 +73,7 @@
         line-height: 2.58;
         text-align: center;
         color: #FCFCFC;
-        background-color: #84A178;
+        background-color: getColor('green-main');
         border-radius: 10px;
 
     @include tablet {
@@ -81,13 +87,13 @@
       }
 
       @include desktop {
+        padding: 43px 109px 43px 109px;
         display: flex;
         margin-right: auto;
         margin-left: auto;
         align-items: center;
         max-width: 968px;
         max-height: 130px;
-        padding: 74px 43px 74px 43px;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.87;
@@ -124,8 +130,8 @@
 
 
 .slick-dots li.slick-active button:before{
-    background-color: #84a178;
-    color: #84a178;
+    background-color: getColor('green-main');
+    color: getColor('green-main');
     border-radius: 50%;
     width: 12px;
     height: 12px;
