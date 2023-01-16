@@ -28,6 +28,9 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
+  &:focus > .btn__icon {
+    fill: #ffffff;
+  }
 }
 
 .btn-hero {
@@ -47,6 +50,9 @@
 
 .btn-about {
   @extend %button;
+  &:focus > .btn__icon {
+    fill: #ffffff;
+  }
 }
 
 .btn-contacts {
@@ -59,20 +65,22 @@
   @media screen and (min-width: 768px) {
     margin-right: 16px;
   }
+  &:focus > .btn__icon {
+    fill: #ffffff;
+  }
 }
 
 .btn-transparent-contacts {
   @extend %button;
   width: 196px;
   background-color: transparent;
+  &:focus > .btn__icon {
+    fill: #ffffff;
+  }
 }
 
 .btn__icon {
   margin-left: 7px;
-
-  &:focus {
-    fill: #ffffff;
-  }
 }
 
 // ---------Menu buttons-------------
@@ -102,6 +110,9 @@
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  &:focus > .btn__icon {
+    fill: #ffffff;
   }
 }
 
