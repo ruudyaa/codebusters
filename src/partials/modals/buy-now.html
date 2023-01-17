@@ -64,10 +64,14 @@
             </div>
             <div class="form__center">
                 <label class="form__field">
-                    <input type="text" class="form__inputs" name="name" placeholder="Name" required/>
+                    <input type="text" class="form__inputs" name="name" placeholder="Name" 
+                    pattern="[A-Za-z] {1,15]"
+                    required/>
                 </label>
                 <label class="form__field">
-                    <input type="tel" class="form__inputs" name="phone" placeholder="Phone"
+                    <input type="tel" class="form__inputs" name="phone"
+                    placeholder="Phone"
+                    pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                     minlength="9" maxlength="12" required/>
                 </label>
                 <label class="form__field">
