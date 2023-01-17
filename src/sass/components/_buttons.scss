@@ -29,7 +29,7 @@
     display: block;
   }
   &:focus > .btn__icon {
-    fill: #ffffff;
+    fill: getColor('theme-white');
   }
 }
 
@@ -39,7 +39,7 @@
 }
 
 .btn-hero_icon {
-  fill: #ffffff;
+  fill: getColor('theme-white');
 }
 
 .btn-products {
@@ -51,7 +51,7 @@
 .btn-about {
   @extend %button;
   &:focus > .btn__icon {
-    fill: #ffffff;
+    fill: getColor('theme-white');
   }
 }
 
@@ -66,7 +66,7 @@
     margin-right: 16px;
   }
   &:focus > .btn__icon {
-    fill: #ffffff;
+    fill: getColor('theme-white');
   }
 }
 
@@ -75,7 +75,7 @@
   width: 196px;
   background-color: transparent;
   &:focus > .btn__icon {
-    fill: #ffffff;
+    fill: getColor('theme-white');
   }
 }
 
@@ -100,7 +100,7 @@
 }
 
 .btn-menu-burger__icon {
-  fill: #ffffff;
+  fill: getColor('theme-white');
 }
 
 .btn-menu {
@@ -112,7 +112,7 @@
     display: none;
   }
   &:focus > .btn__icon {
-    fill: #ffffff;
+    fill: getColor('theme-white');
   }
 }
 
