@@ -144,14 +144,11 @@
 .products__item-wrapper {
   width: 200px;
   height: 148px;
-  margin-bottom: 53px;
 
   @media screen and (min-width: 480px) {
-    margin-bottom: 61px;
   }
 
   @include tablet {
-    margin-bottom: 50px;
     width: 172px;
     height: 175px;
   }
@@ -218,22 +215,21 @@
 .products__modal-open-btn {
   display: inline-block;
   margin-bottom: 16px;
-  padding: 0 15px 16px;
+  padding: 53px 15px 16px;
   cursor: pointer;
   border: none;
   background-color: transparent;
 
   @include mobile {
-    padding: 0 15px 16px;
+    padding: 61px 15px 16px;
   }
 
   @include tablet {
-    padding: 0 15px 12px;
+    padding: 50px 15px 12px;
   }
 
   @include desktop {
-    padding: 0 15px 58px;
-    margin-bottom: 60px;
+    padding: 50 15px 58px;
   }
 }
 
