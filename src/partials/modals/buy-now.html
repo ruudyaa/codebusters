@@ -12,6 +12,7 @@
             <use href="./images/icons.svg#mobile_menu_x"></use>
           </svg>
         </button>
+
         <div class="form__container">
           <div class="form__radio">
             <label>
@@ -82,7 +83,8 @@
             </label>
           </div>
         </div>
-        <div class="form__center">
+
+        <!-- <div class="form__center">
           <label class="form__field">
             <input
               type="text"
@@ -110,7 +112,42 @@
               placeholder="Comment"
             ></textarea>
           </label>
+        </div> -->
+        <div class="form-contacts__wrap">
+          <div class="form-contacts__field">
+            <input
+              class="form-contacts__input"
+              name="name"
+              id="name"
+              required
+              pattern="[A-Za-z] {1,15]"
+              placeholder=" "
+            />
+            <label for="name" class="form-contacts__label">Name</label>
+          </div>
+          <div class="form-contacts__field">
+            <input
+              class="form-contacts__input"
+              name="tel"
+              id="tel"
+              required
+              placeholder=" "
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            />
+            <label for="tel" class="form-contacts__label">Phone</label>
+          </div>
+          <div class="form-contacts__field">
+            <textarea
+              class="form-contacts__textarea"
+              name="comment"
+              id="comment"
+              rows="1"
+              placeholder=" "
+            ></textarea>
+            <label for="comment" class="form-contacts__label">Comment</label>
+          </div>
         </div>
+
         <div class="form__btn">
           <button type="submit" class="form__sabmit">Submit</button>
         </div>
