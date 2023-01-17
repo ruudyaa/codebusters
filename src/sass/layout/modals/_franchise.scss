@@ -124,7 +124,7 @@
   height: 32px;
 
   &:focus {
-    border-color: getColor('orange-main');
+    border-color: getColor('yellow-main');
   }
 
   @include tablet {
@@ -162,7 +162,7 @@
   }
 
   &:focus {
-    border-color: getColor('orange-main');
+    border-color: getColor('yellow-main');
   }
 }
 
@@ -225,21 +225,21 @@
 .form-contacts__input:focus + .form-contacts__label,
 .form-contacts__input:not(:placeholder-shown) + .form-contacts__label {
   transform: translateY(-180%);
-  color: getColor('orange-main');
+  color: getColor('yellow-main');
 
   @include tablet {
     transform: translateY(-200%);
-    color: getColor('orange-main');
+    color: getColor('yellow-main');
   }
 }
 
 .form-contacts__textarea:focus + .form-contacts__label,
 .form-contacts__textarea:not(:placeholder-shown) + .form-contacts__label {
   transform: translateY(-200%);
-  color: getColor('orange-main');
+  color: getColor('yellow-main');
 
   @include tablet {
     transform: translateY(-200%);
-    color: getColor('orange-main');
+    color: getColor('yellow-main');
   }
 }
