@@ -34,9 +34,10 @@
         box-sizing: content-box;
         border: none;
         background-color: inherit;
-        &:hover {
-            color: getColor('theme-white');
-            transform: rotate(135deg);
+
+        &:hover,
+        &:focus {
+            fill: getColor('orange-main');
         }
     }
     &__container {
@@ -80,7 +81,8 @@
         border-radius: 15px;
         width: 132px;
         height: 136px;
-    }
+    }  
+
     &__choice {
         position: absolute;
         left: 30px;
@@ -188,3 +190,4 @@
         justify-content: center;
     }
 }
+
