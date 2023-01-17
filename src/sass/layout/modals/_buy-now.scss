@@ -23,22 +23,44 @@
     }
   }
   &__close {
-    fill: getColor('theme-black');
     position: absolute;
     top: 12px;
     right: 12px;
+    display: flex;
+    padding: 4px;
     width: 20px;
     height: 20px;
-    cursor: pointer;
-    transition: all 0.6s;
-    box-sizing: content-box;
+    background-color: transparent;
+    color: getColor('theme-black');
+
     border: none;
-    background-color: inherit;
-    &:hover {
-      color: getColor('theme-white');
-      transform: rotate(135deg);
+
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: getColor('orange-main');
+    }
+
+    .form__icon-close {
+      fill: currentColor;
+      width: 11px;
+      height: 11px;
+    }
+
+    @include tablet {
+      width: 24px;
+      height: 24px;
+
+      .form__icon-close {
+        width: 13px;
+        height: 13px;
+      }
     }
   }
+
   &__container {
     display: flex;
     justify-content: center;
