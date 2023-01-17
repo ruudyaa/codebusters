@@ -93,7 +93,6 @@
   &::before {
     display: block;
     position: absolute;
-    // z-index: 100;
     z-index: 4;
     content: '';
     margin-top: -231px;
@@ -179,6 +178,7 @@
     height: 200px;
     border-radius: 50%;
   }
+
   @include tablet {
     font-size: 22px;
     line-height: calc(27 / 22);
