@@ -1,7 +1,7 @@
 .form {
   padding: 28px 29px 28px 29px;
   width: 280px;
-  height: 991px;
+  max-height: 991px;
   margin: 0 auto;
   background: getColor('theme-white');
   border: 2px solid getColor('yellow-main');
@@ -10,7 +10,7 @@
 
   @include tablet {
     width: 568px;
-    height: 644px;
+    max-height: 644px;
     padding: 32px 0;
   }
 

@@ -93,7 +93,8 @@
   &::before {
     display: block;
     position: absolute;
-    z-index: 100;
+    // z-index: 100;
+    z-index: 4;
     content: '';
     margin-top: -231px;
     width: 200px;
@@ -171,7 +172,7 @@
   &::before {
     display: block;
     position: absolute;
-    z-index: 99;
+    z-index: 3;
     margin-top: -220px;
     content: '';
     width: 200px;
