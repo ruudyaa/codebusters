@@ -183,13 +183,15 @@
     color: getColor('theme-white');
     width: 139px;
     margin-bottom: 12px;
+
     @include desktop {
       font-size: 14px;
-      width: 200px;
+      width: 220px;
       margin-bottom: 24px;
       line-height: calc(20 / 14);
     }
   }
+
   &__arrow {
     fill: getColor('theme-white');
   }
