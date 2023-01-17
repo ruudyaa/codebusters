@@ -1,6 +1,7 @@
 .form {
   padding: 28px 29px 28px 29px;
   width: 280px;
+  height: 991px;
   margin: 0 auto;
   background: getColor('theme-white');
   border: 2px solid getColor('yellow-main');
@@ -9,10 +10,12 @@
 
   @include tablet {
     width: 568px;
+    height: 644px;
     padding: 32px 0;
   }
 
   &__title {
+    display: block;
     font-family: 'Seymour One', sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -64,20 +67,7 @@
     }
   }
 
-  //   &__close {
-  //     fill: getColor('theme-black');
   //     position: absolute;
-  //     top: 12px;
-  //     right: 12px;
-  //     cursor: pointer;
-  //     transition: all 0.6s;
-  //     box-sizing: content-box;
-  //     &:hover {
-  //       color: getColor('theme-white');
-  //       transform: rotate(135deg);
-  //     }
-  //   }
-
   &__container {
     display: flex;
     justify-content: center;
