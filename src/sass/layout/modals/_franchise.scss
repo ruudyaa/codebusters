@@ -23,18 +23,18 @@
 
 .franchise__button {
   position: absolute;
-  left: 90%;
   top: 12px;
+  right: 12px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  background-color: inherit;
-  border: none;
-  color: getColor('theme-black');
-  cursor: pointer;
+  padding: 4px;
   width: 20px;
   height: 20px;
+  background-color: transparent;
+  color: getColor('theme-black');
+
+  border: none;
+
+  cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -52,7 +52,6 @@
   @include tablet {
     width: 24px;
     height: 24px;
-    left: 93%;
 
     & .franchise__icon {
       width: 13px;
