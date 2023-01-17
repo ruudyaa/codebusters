@@ -18,13 +18,16 @@
       background-image: url(../images/bg-tab@2x.png);
     }
   }
+
   @include desktop {
     background-image: url(../images/bg-desk@1x.png);
+
     @include retina {
       background-image: url(../images/bg-desk@2x.png);
     }
   }
 }
+
 .products__subtitle {
   margin-bottom: 12px;
   font-weight: 800;
@@ -37,12 +40,14 @@
     font-size: 22px;
     line-height: calc(27 / 22);
   }
+
   @include desktop {
     font-size: 30px;
     line-height: calc(37 / 30);
     letter-spacing: 0.04em;
   }
 }
+
 .products__title {
   font-family: 'Seymour One';
   font-size: 30px;
@@ -55,6 +60,7 @@
   @include mobile {
     margin-bottom: 145px;
   }
+
   @include tablet {
     font-size: 34px;
     line-height: calc(43 / 34);
@@ -157,6 +163,7 @@
     height: 142px;
   }
 }
+
 .products__item-title {
   font-size: 20px;
   line-height: calc(24 / 20);
@@ -184,6 +191,7 @@
       left: 17.5px;
     }
   }
+
   @include desktop {
     font-size: 30px;
     line-height: calc(37 / 30);
@@ -241,6 +249,7 @@
     color: getColor('white-contacts');
   }
 }
+
 .products__modal-open-icon {
   fill: currentColor;
 }
@@ -285,6 +294,7 @@
     getColor('theme-grey');
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
+
 .products-shakes::before {
   background: linear-gradient(
       0deg,
@@ -296,7 +306,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  // =====  фото-бифор   ===================
   .products-img-cream::before {
     background: url(../images/products/cream-desk@1x.png);
   }
