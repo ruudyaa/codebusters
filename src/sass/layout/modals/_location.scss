@@ -22,20 +22,19 @@
 }
 
 .location__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  left: 90%;
   top: 12px;
-  padding: 0;
-
-  background-color: inherit;
-  border: none;
-  color: getColor('theme-black');
-  cursor: pointer;
+  right: 12px;
+  display: flex;
+  padding: 4px;
   width: 20px;
   height: 20px;
+  background-color: transparent;
+  color: getColor('theme-black');
+
+  border: none;
+
+  cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -53,8 +52,6 @@
   @include tablet {
     width: 24px;
     height: 24px;
-    left: 94%;
-    top: 12px;
 
     & .location__icon {
       width: 13px;

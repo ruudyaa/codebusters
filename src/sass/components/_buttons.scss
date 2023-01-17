@@ -28,6 +28,9 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
+  &:focus > .btn__icon {
+    fill: getColor('theme-white');
+  }
 }
 
 .btn-hero {
@@ -36,7 +39,7 @@
 }
 
 .btn-hero_icon {
-  fill: #ffffff;
+  fill: getColor('theme-white');
 }
 
 .btn-products {
@@ -47,6 +50,9 @@
 
 .btn-about {
   @extend %button;
+  &:focus > .btn__icon {
+    fill: getColor('theme-white');
+  }
 }
 
 .btn-contacts {
@@ -59,12 +65,18 @@
   @media screen and (min-width: 768px) {
     margin-right: 16px;
   }
+  &:focus > .btn__icon {
+    fill: getColor('theme-white');
+  }
 }
 
 .btn-transparent-contacts {
   @extend %button;
   width: 196px;
   background-color: transparent;
+  &:focus > .btn__icon {
+    fill: getColor('theme-white');
+  }
 }
 
 .btn__icon {
@@ -88,7 +100,7 @@
 }
 
 .btn-menu-burger__icon {
-  fill: #ffffff;
+  fill: getColor('theme-white');
 }
 
 .btn-menu {
@@ -98,6 +110,9 @@
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  &:focus > .btn__icon {
+    fill: getColor('theme-white');
   }
 }
 
