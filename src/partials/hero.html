@@ -1,125 +1,114 @@
-<section>
-  <div class="hero">
+<section class="hero">
     <div class="container-hero">
-      <div>
-        <h1 class="hero__title">ice cream made with passion</h1>
-        <ul class="hero__list">
-          <li>
-            <a href="”#products”" class="hero__btn hero__btn--products"
-              >Products</a
-            >
-          </li>
-          <li>
-            <a href="”#made”" class="hero__btn hero__btn--made"
-              >How it’s made?</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="hero__counter">
-        <ul>
-          <li class="hero__item">
-            <b class="hero__number">16</b>
-            <p class="hero__label">cafes</p>
-          </li>
-          <li class="hero__item">
-            <b class="hero__number">23</b>
-            <p class="hero__label">food trucks</p>
-          </li>
-        </ul>
-      </div>
+        <div>
+            <h1 class="hero__title">ice cream made with passion</h1>
+            <ul class="hero__list">
+                <li>
+                    <button class="hero__btn hero__btn--products"><a href=”#products” class="hero__link">Products</a></button>
+                </li>
+                <li>
+                    <button class="hero__btn hero__btn--made"><a href=”#made” class="hero__link"></a>How it’s made?</a></button>
+                </li>
+            </ul>
+        </div>
+        <div class="hero__counter">
+            <ul>
+                <li class="hero__item">
+                    <b class="hero__number">16</b>
+                    <p class="hero__label">cafes</p>
+                </li>
+                <li class="hero__item">
+                    <b class="hero__number">23</b>
+                    <p class="hero__label">food trucks</p>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="container__waffel">
-      <picture>
-        <source
-          srcset="
-            ./images/hero/waffel-desk@1x.png 1x,
-            ./images/hero/waffel-desk@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-
-        <source
-          srcset="
-            ./images/hero/waffel-tab@1x.png 1x,
-            ./images/hero/waffel-tab@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-
-        <source
-          srcset="
-            ./images/hero/waffel-mob-218@1x.png 1x,
-            ./images/hero/waffel-mob-218@2x.png 2x
-          "
-          media="(min-width: 480px)"
-        />
-
-        <img
-          srcset="
-            ./images/hero/waffel-mob@1x.png 1x,
-            ./images/hero/waffel-mob@2x.png 2x
-          "
-          src="./images/hero/waffel-mob@1x.png"
-          alt="Ice cream in a cone"
-        />
-      </picture>
+        <picture>
+            <source
+            srcset="
+                ./images/hero/waffel-desk@1x.png 1x,
+                ./images/hero/waffel-desk@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            />
+            <source
+            srcset="
+                ./images/hero/waffel-tab@1x.png 1x,
+                ./images/hero/waffel-tab@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            />
+            <source
+            srcset="
+                ./images/hero/waffel-mob-218@1x.png 1x,
+                ./images/hero/waffel-mob-218@2x.png 2x
+            "
+            media="(min-width: 480px)"
+            />
+            <img
+            srcset="
+                ./images/hero/waffel-mob@1x.png 1x,
+                ./images/hero/waffel-mob@2x.png 2x
+            "
+            src="./images/hero/waffel-mob@1x.png"
+            alt="Ice cream in a cone"
+            />
+        </picture>
     </div>
     <div class="container-dots">
-      <picture>
-        <source
-          srcset="
-            ./images/hero/dots-desk@1x.png 1x,
-            ./images/hero/dots-desk@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-
-        <source
-          srcset="
-            ./images/hero/dots-tab@1x.png 1x,
-            ./images/hero/dots-tab@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-
-        <img
-          srcset="
-            ./images/hero/dots-mob@1x.png 1x,
-            ./images/hero/dots-mob@2x.png 2x
-          "
-          src="./images/hero/dots-mob@1x.png"
-          alt="Decorative dots"
-          class="hero__dots"
-        />
-      </picture>
+        <picture>
+            <source
+            srcset="
+                ./images/hero/dots-desk@1x.png 1x,
+                ./images/hero/dots-desk@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            />
+            <source
+            srcset="
+                ./images/hero/dots-tab@1x.png 1x,
+                ./images/hero/dots-tab@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            />
+            <img
+            srcset="
+                ./images/hero/dots-mob@1x.png 1x,
+                ./images/hero/dots-mob@2x.png 2x
+            "
+            src="./images/hero/dots-mob@1x.png"
+            alt="Decorative dots"
+            class="hero__dots"
+            />
+        </picture>
     </div>
     <div class="container-ice">
-      <picture class="hero__iceballs">
-        <source
-          srcset="
-            ./images/hero/ice-balls-desk@1x.png 1x,
-            ./images/hero/ice-balls-desk@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-
-        <img
-          srcset="
-            ./images/hero/ice-balls-tab@1x.png 1x,
-            ./images/hero/ice-balls-tab@2x.png 2x
-          "
-          src="./images/hero/ice-balls-tab@1x.png"
-          alt="Balls of ice cream on a plate"
-        />
-      </picture>
-      <p class="hero__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
-      <svg class="hero__arrow" width="40px" height="16px">
-        <use href="./images/icons.svg#arrow"></use>
-      </svg>
+        <picture class="hero__iceballs">
+            <source
+            srcset="
+                ./images/hero/ice-balls-desk@1x.png 1x,
+                ./images/hero/ice-balls-desk@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            />
+            <img
+            srcset="
+                ./images/hero/ice-balls-tab@1x.png 1x,
+                ./images/hero/ice-balls-tab@2x.png 2x
+            "
+            src="./images/hero/ice-balls-tab@1x.png"
+            alt="Balls of ice cream on a plate"
+            />
+        </picture>
+        <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <button class="hero__arrow">
+            <a href="#about">
+                <svg width="40px" height="16px" class="hero__svg">
+                    <use href="./images/icons.svg#arrow"></use>
+                </svg>
+            </a>
+        </button>
     </div>
-  </div>
 </section>
