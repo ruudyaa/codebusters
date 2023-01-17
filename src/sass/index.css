@@ -1058,7 +1058,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .products__modal-open-btn {
-    padding: 50 15px 58px;
+    padding: 50 15px 8px;
   }
 }
 .products__modal-open-btn:hover {
