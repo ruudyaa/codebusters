@@ -171,6 +171,7 @@
 
 .product__benefit-item:not(:last-child) {
   margin-right: 9px;
+
   @include tablet {
     margin-right: 20px;
   }
@@ -187,11 +188,10 @@
   margin-bottom: 8px;
   font-size: 0px;
 
-  background-color: getColor(‘ellipse-color’);
-  background-color: #9cbe8f;
-  border-color: getColor(‘ellipse-color’);
-  // border-color:#9CBE8F;
+  background-color: getColor('ellipse-color');
+  border-color: getColor('ellipse-color');
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
   @include tablet {
     width: 53px;
     height: 53px;
@@ -207,7 +207,8 @@
   font-weight: 500;
   font-size: 10px;
   line-height: calc(28 / 10);
-  color: getColor(‘theme-black’);
+  color: getColor('theme-black');
+
   @include tablet {
     font-weight: 500;
     font-size: 12px;
@@ -222,7 +223,8 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: getColor(‘theme-black’);
+  color: getColor('theme-black');
+
   @include tablet {
     font-weight: 400;
     font-size: 12px;
@@ -234,6 +236,7 @@
   display: block;
   width: 100%;
   margin-bottom: 40px;
+
   @include tablet {
     margin-bottom: 48px;
   }
@@ -244,7 +247,7 @@
   font-size: 20px;
   line-height: calc(28 / 20);
   text-align: center;
-  color: getColor(‘theme-black’);
+  color: getColor('theme-black');
   margin-bottom: 24px;
 }
 
@@ -266,7 +269,7 @@
   font-size: 14px;
   line-height: calc(25 / 14);
   letter-spacing: 0.04em;
-  color: getColor(‘theme-black’);
+  color: getColor('theme-black');
 }
 
 .product__ingred-item:not(:last-child) {
@@ -281,12 +284,12 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
-  color: getColor(‘theme-black’);
+  color: getColor('theme-black');
   padding: 12px 34px;
   width: 132px;
   height: 42px;
   border-radius: 10px;
-  // transition: all 300ms linear;
+
   @include tablet {
     padding: 12px 34px;
     width: 121px;
@@ -304,15 +307,16 @@
 .btn:focus {
   color: getColor('white-contacts');
 }
+
 .btn-yellow,
 .product__md-btn:active {
   background-color: getColor('yellow-main');
-  color: getColor(‘theme-black’);
+  color: getColor('theme-black');
   border-color: getColor('yellow-main');
   border-width: 2px;
-  // transition: all 300ms linear;
 }
+
 .btn:disabled {
   background: getColor('button-disable');
-  color: getColor(‘theme-black’);
+  color: getColor('theme-black');
 }
