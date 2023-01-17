@@ -185,18 +185,12 @@
     }
   }
 }
-// //////////////////////////////////////
+
 .products__item-wrapper {
   width: 200px;
   height: 148px;
-  margin-bottom: 53px;
-
-  @include mobile {
-    margin-bottom: 61px;
-  }
 
   @include tablet {
-    margin-bottom: 50px;
     width: 172px;
     height: 175px;
   }
@@ -220,30 +214,37 @@
 
 .products__modal-open-btn {
   display: inline-block;
-  margin-bottom: 16px;
-  padding: 0 15px 16px;
+  padding: 53px 15px 16px;
   cursor: pointer;
   border: none;
   background-color: transparent;
-
   @include mobile {
-    padding: 0 15px 16px;
+    padding: 61px 15px 16px;
   }
-
   @include tablet {
-    padding: 0 15px 12px;
+    padding: 50px 15px 12px;
   }
-
   @include desktop {
-    padding: 0 15px 58px;
-    margin-bottom: 60px;
+    padding: 50px 15px 58px;
   }
 }
 
+/////////////////////////////////////////////////////
 .products-img-cream {
   background-color: #aec6a5;
   &::before {
     background: url(../images/products/cream-mob-tab@1x.png);
+
+    @include retina {
+      background: url(../images/products/cream-mob-tab@2x.png);
+    }
+    @include desktop {
+      background: url(../images/products/cream-desk@1x.png);
+
+      @include retina {
+        background: url(../images/products/cream-desk@2x.png);
+      }
+    }
   }
 }
 
@@ -251,15 +252,63 @@
   background-color: #efd478;
   &::before {
     background: url(../images/products/coffee-mob-tab@1x.png);
+
+    @include retina {
+      background: url(../images/products/coffee-mob-tab@2x.png);
+    }
+
+    @include desktop {
+      background: url(../images/products/coffee-desk@1x.png);
+
+      @include retina {
+        background: url(../images/products/coffee-desk@2x.png);
+      }
+    }
   }
 }
-
 .products-img-shakes {
   background-color: #d6936d;
   &::before {
     background: url(../images/products/shake-mob-tab@1x.png);
+
+    @include retina {
+      background: url(../images/products/shake-mob-tab@2x.png);
+    }
+    @include desktop {
+      background: url(../images/products/shake-desk@1x.png);
+
+      @include retina {
+        background: url(../images/products/shake-desk@2x.png);
+      }
+    }
   }
 }
+// ////////////  закоментировано - то, что было после загрузки ветки.
+// Выше я сделал с медиазапросами по фото. Размеры там совпадают, ничего ломаться не должно.
+//  Если что, оставляю старую часть кода закомментированной. Можно заменить или удалить
+//
+//
+// .products-img-cream {
+//   background-color: #aec6a5;
+//   &::before {
+//     background: url(../images/products/cream-mob-tab@1x.png);
+//   }
+// }
+
+// .products-img-coffee {
+//   background-color: #efd478;
+//   &::before {
+//     background: url(../images/products/coffee-mob-tab@1x.png);
+//   }
+// }
+
+// .products-img-shakes {
+//   background-color: #d6936d;
+//   &::before {
+//     background: url(../images/products/shake-mob-tab@1x.png);
+//   }
+// }
+// ...............................................
 
 .products-cream::before {
   background: linear-gradient(
@@ -267,8 +316,16 @@
       rgba(156, 190, 143, 0.7),
       rgba(156, 190, 143, 0.7)
     ),
-    getColor('theme-grey');
-  box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+  @include tablet {
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  }
+
+  @include desktop {
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+  }
 }
 
 .products-coffee::before {
@@ -277,8 +334,16 @@
       rgba(248, 210, 78, 0.7),
       rgba(248, 210, 78, 0.7)
     ),
-    getColor('theme-grey');
+    #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+
+  @include tablet {
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  }
+
+  @include desktop {
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  }
 }
 .products-shakes::before {
   background: linear-gradient(
@@ -286,153 +351,14 @@
       rgba(213, 117, 63, 0.7),
       rgba(213, 117, 63, 0.7)
     ),
-    getColor('theme-grey');
+    #d9d9d9;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-}
 
-// ===============  медиаправило для фото бифора и фона ================
-
-// @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
-//   screen and (min-resolution: 192dpi) and (max-width: 1199px),
-//   screen and (min-resolution: 2dppx) and (max-width: 1199px) {
-//   .products-img-cream {
-//     background: url(../images/products/cream-mob-tab@2x.png);
-//   }
-//   .products-img-coffee {
-//     background: url(../images/products/coffee-mob-tab@2x.png);
-//   }
-//   .products-img-shakes {
-//     background: url(../images/products/shake-mob-tab@2x.png);
-//   }
-// }
-
-// // ////////// +  1200px  + //////////////////////////////////////
-
-@media screen and (min-width: 1200px) {
-  // =====  фото-бифор   ===================
-  .products-img-cream::before {
-    background: url(../images/products/cream-desk@1x.png);
+  @include tablet {
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
-  .products-img-coffee::before {
-    background: url(../images/products/coffee-desk@1x.png);
-  }
-  .products-img-shakes::before {
-    background: url(../images/products/shake-desk@1x.png);
+
+  @include desktop {
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
   }
 }
-
-//   .products-img-cream::before {
-//     background: url(../images/products/cream-desk@2x.png);
-//   }
-
-//   .products-img-coffee::before {
-//     background: url(../images/products/coffee-desk@2x.png);
-//   }
-
-//   .products-img-shakes::before {
-//     background: url(../images/products/shake-desk@2x.png);
-//   }
-// }
-
-//////////////// -  1200 -  //////////////////////////////////
-
-// .item-cream::before {
-//   display: block;
-//   position: absolute;
-//   z-index: 100;
-//   bottom: 80%;
-//   left: 34px;
-//   content: '';
-//   width: 302px;
-//   height: 302px;
-//   background: url(../images/products/cream-desk@1x.png);
-// }
-
-// .item-coffee::before {
-//   display: block;
-//   position: absolute;
-//   z-index: 100;
-//   bottom: 80%;
-//   left: 34px;
-//   content: '';
-//   width: 302px;
-//   height: 302px;
-//   background: url(../images/products/coffee-desk@1x.png);
-// }
-
-// .item-shakes::before {
-//   display: block;
-//   position: absolute;
-//   z-index: 100;
-//   bottom: 80%;
-//   left: 34px;
-//   content: '';
-//   width: 302px;
-//   height: 302px;
-//   background: url(../images/products/shake-desk@1x.png);
-// }
-
-/////////////////////////////////////////////////////////
-
-// .products__item-wrapper {
-//   width: 246px;
-//   height: 142px;
-// }
-//////////////////////////////////////////////
-
-// .item-title-cream::before {
-//   display: block;
-//   position: absolute;
-//   z-index: 99;
-//   bottom: 413px;
-//   left: 34px;
-//   content: '';
-//   width: 302px;
-//   height: 302px;
-//   border-radius: 50%;
-//   background: linear-gradient(
-//       0deg,
-//       rgba(156, 190, 143, 0.7),
-//       rgba(156, 190, 143, 0.7)
-//     ),
-//     #d9d9d9;
-//   box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-// }
-
-// .item-title-coffee::before {
-//   display: block;
-//   position: absolute;
-//   z-index: 99;
-//   bottom: 413px;
-//   left: 34px;
-//   content: '';
-//   width: 302px;
-//   height: 302px;
-//   border-radius: 50%;
-//   background: linear-gradient(
-//       0deg,
-//       rgba(248, 210, 78, 0.7),
-//       rgba(248, 210, 78, 0.7)
-//     ),
-//     #d9d9d9;
-//   box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-// }
-
-// .item-title-shakes::before {
-//   display: block;
-//   position: absolute;
-//   z-index: 99;
-//   bottom: 413px;
-//   left: 34px;
-//   content: '';
-//   width: 302px;
-//   height: 302px;
-//   border-radius: 50%;
-//   background: linear-gradient(
-//       0deg,
-//       rgba(213, 117, 63, 0.7),
-//       rgba(213, 117, 63, 0.7)
-//     ),
-//     #d9d9d9;
-//   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-// }
