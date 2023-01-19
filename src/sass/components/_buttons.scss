@@ -12,11 +12,6 @@
   transition: 0.3s all;
 }
 
-.back-to-top:hover,
-.back-to-top:focus {
-  background: getColor('theme-white');
-}
-
 .back-to-top.active {
   bottom: 50px;
   transition: 0.3s all;
@@ -24,6 +19,11 @@
 
 .back-icon {
   fill: getColor('green-main');
+}
+
+.back-icon:hover,
+.back-icon:focus {
+  fill: getColor('theme-white');
 }
 
 .btn-header {
