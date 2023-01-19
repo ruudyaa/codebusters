@@ -137,6 +137,14 @@
   }
 }
 
+.form-contacts__input:not(:placeholder-shown):required:valid {
+  border-color: getColor('green-main');
+}
+
+.form-contacts__input:not(:placeholder-shown):not(:focus):required:invalid {
+  border-color: #ff0000;
+}
+
 .form-contacts__textarea {
   resize: none;
   background-color: rgba(248, 210, 78, 0.1);
@@ -192,10 +200,18 @@
     font-size: 14px;
     line-height: calc(17 / 14);
   }
-  &:hover,
+  &:hover {
+    background-color: getColor('button-hover-focus');
+    color: getColor('theme-black');
+  }
   &:focus {
     color: getColor('white-contacts');
     background-color: getColor('button-hover-focus');
+  }
+
+  &:disabled {
+    background-color: getColor('button-disable');
+    border-color: getColor('button-disable');
   }
 }
 
