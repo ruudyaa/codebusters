@@ -2,6 +2,12 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const $menu = $('.js-menu-container');
+  const $mobileMenuItems = $menu.find('.navigation-list-menu__item');
+
+  $mobileMenuItems.on('click', function (ev) {
+    $menu.removeClass('is-open');
+  });
 
   const toggleMenu = () => {
     const isMenuOpen =
