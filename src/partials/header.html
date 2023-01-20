@@ -2,12 +2,12 @@
   <div class="container container--header">
     <img
       srcset="
-        ./images/header/logo-desk@1x.png  60w,
-        ./images/header/logo-desk@2x.png 120w,
-        ./images/header/logo-tab@1x.png   48w,
-        ./images/header/logo-tab@2x.png   96w,
         ./images/header/logo-mob@1x.png   40w,
-        ./images/header/logo-mob@2x.png   80w
+        ./images/header/logo-tab@1x.png   48w,
+        ./images/header/logo-desk@1x.png  60w,
+        ./images/header/logo-mob@2x.png   80w,
+        ./images/header/logo-tab@2x.png   96w,
+        ./images/header/logo-desk@2x.png 120w
       "
       sizes="(min-width: 1200px) 60px, (min-width: 480px) 48px, 40px"
       src="./images/header/logo-mob@1x.png"
@@ -15,16 +15,24 @@
     />
     <nav>
       <ul class="navigation-list">
-        <li class="navigation-list__item">
+        <li
+          class="navigation-list__item animate__animated animate__slideInDown animate__delay-1s"
+        >
           <a href="#home" class="navigation-list__link">Home</a>
         </li>
-        <li class="navigation-list__item">
+        <li
+          class="navigation-list__item animate__animated animate__slideInDown animate__delay-2s"
+        >
           <a href="#about" class="navigation-list__link">How it’s made?</a>
         </li>
-        <li class="navigation-list__item">
+        <li
+          class="navigation-list__item animate__animated animate__slideInDown animate__delay-3s"
+        >
           <a href="#products" class="navigation-list__link">Our products</a>
         </li>
-        <li class="navigation-list__item">
+        <li
+          class="navigation-list__item animate__animated animate__slideInDown animate__delay-4s"
+        >
           <a href="#contact" class="navigation-list__link">Contact</a>
         </li>
       </ul>

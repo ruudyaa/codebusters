@@ -42,6 +42,7 @@
   &:hover,
   &:focus {
     color: getColor('yellow-main');
+    transform: scale(1.15);
   }
 }
 
@@ -52,3 +53,4 @@
     display: inline-block;
   }
 }
+

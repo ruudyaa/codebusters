@@ -86,13 +86,15 @@
 
 // styles
 body {
+  
   cursor: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.047 14.0117L28.9811 24.2169C30.8522 25.9633 29.8177 29.1 27.2748 29.3907L23.1573 29.8612C22.124 29.9793 21.1533 30.4167 20.3802 31.1124L18.0069 33.2484C16.0763 34.9859 13 33.6159 13 31.0186V16.2049C13 13.5817 16.1293 12.2219 18.047 14.0117Z' stroke='%23131313' stroke-width='1'/%3E%3C/svg%3E "),
     default;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: getColor('theme-black');
   background-color: getColor('green-main');
-  letter-spacing: 0.04em;
+  letter-spacing: 0.04em; 
+  
 }
 
 button:hover,
