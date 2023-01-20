@@ -5,15 +5,12 @@
         <use href="./images/icons.svg#mobile_menu_x"></use>
       </svg>
     </button>
-    <h2 class="franchise__title">
-      Thank you for your interest in owning an Ice Cream shop
-    </h2>
+    <h2 class="franchise__title">Thank you for your interest in owning an Ice Cream shop</h2>
     <p class="franchise__text">
-      Due to the overwhelming volume of franchise requests we are not accepting
-      new franchisee applications at this time. Once the application process
-      resumes, we will contact you for further information. Please fill out the
-      contact information below and we will reach out for additional
-      information. We appreciate your patience.
+      Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+      applications at this time. Once the application process resumes, we will contact you for
+      further information. Please fill out the contact information below and we will reach out for
+      additional information. We appreciate your patience.
     </p>
 
     <form class="form-contacts">
@@ -23,8 +20,10 @@
             class="form-contacts__input"
             name="name"
             id="name"
+            type="text"
             required
-            pattern="[A-Za-z] {1,15]"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space."
             placeholder=" "
           />
           <label for="name" class="form-contacts__label">Name</label>
@@ -35,8 +34,10 @@
             name="tel"
             id="tel"
             required
+            type="tel"
+            title="Phone number must be 12 symbols (380XXXXXXXXX)."
             placeholder=" "
-            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            pattern="^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$"
           />
           <label for="tel" class="form-contacts__label">Phone</label>
         </div>
@@ -45,10 +46,11 @@
             class="form-contacts__input"
             name="email"
             id="email"
+            type="email"
             required
             autocomplete="off"
             placeholder=" "
-            pattern="[a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           />
           <label for="email" class="form-contacts__label">Email</label>
         </div>

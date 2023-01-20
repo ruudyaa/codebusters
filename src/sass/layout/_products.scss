@@ -95,6 +95,18 @@
   margin-right: auto;
   padding: 123px 40px 0;
   border-radius: 24px;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.03);
+    box-shadow: 0 2px 2px rgb(0 0 0 / 24%), 0 8px 8px rgb(0 0 0 / 12%),
+      2px 8px 12px rgb(0 0 0 / 32%);
+
+    @include tablet {
+      transform: scale(1.07);
+    }
+  }
 
   &::before {
     display: block;
