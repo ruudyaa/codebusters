@@ -112,9 +112,7 @@ img.reviews__img-background {
   color: getColor('theme-black');
 }
 
-.slick-dots {
-  bottom: -81px;
-}
+
 
 .slick-dots li {
   width: 12px;
@@ -148,10 +146,3 @@ button:before {
   border-radius: 50%;
 }
 
-.slick-next:before {
-  display: none;
-}
-
-.slick-prev:before {
-  display: none;
-}
