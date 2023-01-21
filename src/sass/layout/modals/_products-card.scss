@@ -3,9 +3,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 5;
-}  
-
-
+}
 
 .product__modal {
   position: absolute;
@@ -14,18 +12,16 @@
   transform: translate(-50%, -50%) scale(1);
 
   padding: 28px 20px;
-  border: 2px solid getColor('yellow-main');
+  border: 2px solid getColor('accent-color');
   border-radius: 10px;
-  background-color: getColor('white-contacts');
+  background-color: getColor('secondary-bg-color');
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 280px;
   max-height: 100vh;
-  background: getColor('theme-white');
   overflow: scroll;
 
   @include tablet {
@@ -43,7 +39,7 @@
   width: 20px;
   height: 20px;
   background-color: transparent;
-  color: getColor('theme-black');
+  color: getColor('button-text');
   border: none;
   cursor: pointer;
 
@@ -55,7 +51,7 @@
 
   &:hover,
   &:focus {
-    color: getColor('orange-main');
+    color: getColor('icon-close-color');
   }
 }
 
@@ -83,7 +79,7 @@
 
   line-height: calc(28 / 20);
   margin-bottom: 27px;
-  color: getColor(‘theme-black’);
+  color: getColor('secondary-heading-color');
 
   @include tablet {
     margin-bottom: 24px;
@@ -124,8 +120,8 @@
 }
 
 .product__modal-box-img:hover.product__modal-box-img:before {
-    transform: rotateY(180deg);
-    transition: all 300ms linear;
+  transform: rotateY(180deg);
+  transition: all 300ms linear;
 }
 
 .product__benefit-list {
@@ -141,12 +137,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // transition: all 300ms linear;
   width: 53px;
   height: 72px;
-  border: 2px solid getColor(‘ellipse-color’);
-  border: 2px solid #9cbe8f;
+  border: 2px solid getColor('ellipse-color');
   border-radius: 40px;
+
   @include tablet {
     width: 65px;
     height: 90px;
@@ -198,7 +193,7 @@
   font-weight: 500;
   font-size: 10px;
   line-height: calc(28 / 10);
-  color: getColor('theme-black');
+  color: getColor('main-text-color');
 
   @include tablet {
     font-weight: 500;
@@ -214,7 +209,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: getColor('theme-black');
+  color: getColor('main-text-color');
 
   @include tablet {
     font-weight: 400;
@@ -238,7 +233,7 @@
   font-size: 20px;
   line-height: calc(28 / 20);
   text-align: center;
-  color: getColor('theme-black');
+  color: getColor('main-text-color');
   margin-bottom: 24px;
 }
 
@@ -260,7 +255,7 @@
   font-size: 14px;
   line-height: calc(25 / 14);
   letter-spacing: 0.04em;
-  color: getColor('theme-black');
+  color: getColor('main-text-color');
 }
 
 .product__ingred-item:not(:last-child) {
@@ -275,7 +270,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
-  color: getColor('theme-black');
+  color: getColor('button-text');
   padding: 12px 34px;
   width: 132px;
   height: 42px;
@@ -297,18 +292,18 @@
 }
 
 .btn:focus {
-  color: getColor('white-contacts');
+  color: getColor('button-text-focus');
 }
 
 .btn-yellow,
 .product__md-btn:active {
-  background-color: getColor('yellow-main');
-  color: getColor('theme-black');
-  border-color: getColor('yellow-main');
+  background-color: getColor('accent-color');
+  color: getColor('button-text');
+  border-color: getColor('accent-color');
   border-width: 2px;
 }
 
 .btn:disabled {
-  background: getColor('button-disable');
-  color: getColor('theme-black');
+  background: getColor('button-disabled');
+  color: getColor('button-text');
 }
