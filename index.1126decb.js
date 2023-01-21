@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".js-modal-scrolloff"),t=document.querySelector(".js-modal-scrollon"),n=document.body;e.addEventListener("click",(function(e){n.classList.remove("disable-scroll"),e.currentTarget.style.pointerEvents="none",t.style.pointerEvents="auto"})),t.addEventListener("click",(function(t){n.classList.add("disable-scroll"),t.currentTarget.style.pointerEvents="none",e.style.pointerEvents="auto"}))}();
-//# sourceMappingURL=index.1126decb.js.map
