@@ -55,7 +55,7 @@
   line-height: calc(17 / 14);
 
   color: getColor('button-text');
-  background-color: getColor('yellow-main');
+  background-color: getColor('accent-color');
   border-color: transparent;
   border-radius: 10px;
 
@@ -71,11 +71,11 @@
     border-color: transparent;
   }
   &:disabled {
-    background-color: getColor('button-disable');
+    background-color: getColor('button-disabled');
     border-color: transparent;
   }
   &:focus {
-    color: getColor('theme-white');
+    color: getColor('button-text-focus');
   }
 }
 
