@@ -142,7 +142,6 @@
   line-height: calc(22 / 12);
   letter-spacing: 0.04em;
   color: getColor('link-orange');
-  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -236,7 +235,6 @@
   line-height: calc(19 / 12);
   letter-spacing: normal;
   color: getColor('main-text-color');
-  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -289,7 +287,6 @@
   padding: 12px 39px 12px 40px;
   border: none;
   border-radius: 10px;
-  cursor: pointer;
 
   &.button__text {
     font-weight: 600;
