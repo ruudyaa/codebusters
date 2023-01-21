@@ -1,5 +1,5 @@
 .reviews {
-  border-top: 30px solid getColor('green-main');
+  border-top: 30px solid getColor('primary-bg-color');
   background-image: url(/src/images/bg-mob@1x.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,7 +10,7 @@
   }
 
   @include tablet {
-    border-top: 145px solid getColor('green-main');
+    border-top: 145px solid getColor('primary-bg-color');
     background-image: url(/src/images/bg-tab@1x.png);
 
     @include retina {
@@ -19,7 +19,7 @@
   }
 
   @include desktop {
-    border-top: 100px solid getColor('green-main');
+    border-top: 100px solid getColor('primary-bg-color');
     background-image: url(/src/images/bg-desk@1x.png);
 
     @include retina {
@@ -76,8 +76,8 @@ img.reviews__img-background {
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
-  color: getColor('theme-white');
-  background-color: getColor('green-main');
+  color: getColor('secondary-text-color');
+  background-color: getColor('primary-bg-color');
   border-radius: 10px;
 
   @include tablet {
@@ -109,10 +109,8 @@ img.reviews__img-background {
   font-size: 20px;
   line-height: 1.85;
   text-align: center;
-  color: getColor('theme-black');
+  color: getColor('secondary-heading-color');
 }
-
-
 
 .slick-dots li {
   width: 12px;
@@ -147,7 +145,7 @@ button:before {
 }
 
 .slick-dots li.slick-active button:before {
-  background-color: getColor('green-main');
+  background-color: getColor('primary-bg-color');
   color: transparent;
   border-radius: 50%;
 }
