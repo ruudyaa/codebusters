@@ -17,7 +17,8 @@
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  padding: 28px 20px;
+  // padding: 28px 20px;
+  padding: 28px;
   border: 2px solid getColor('accent-color');
   border-radius: 10px;
   background-color: getColor('secondary-bg-color');
