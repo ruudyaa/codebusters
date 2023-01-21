@@ -40,28 +40,28 @@ $colors: (
   'theme-dark': #131313,
 );
 
-//variables-old
-$colors: (
-  'yellow-main': #f8d24e,
-  'yellow-secondary': #efd478,
-  'yellow-transparent': rgba(248, 210, 78, 0.7),
-  'theme-white': #fcfcfc,
-  'theme-black': #131313,
-  'theme-grey': #d9d9d9,
-  'theme-grey-2': #ababab,
-  'green-main': #84a178,
-  'green-transparent': rgba(156, 190, 143, 0.7),
-  'orange-main': #d6936d,
-  'orange-transparent': rgba(213, 117, 63, 0.7),
-  'green-light': #aec6a5,
-  'button-text': #000000,
-  'button-hover-focus': #0a8817,
-  'button-disable': #ababab,
-  'footer-border': #e1e1e1,
-  'footer-grey': #7a7a7a,
-  'white-contacts': #fff,
-  'ellipse-color': #9cbe8f,
-);
+// //variables-old
+// $colors: (
+//   'yellow-main': #f8d24e,
+//   'yellow-secondary': #efd478,
+//   'yellow-transparent': rgba(248, 210, 78, 0.7),
+//   'theme-white': #fcfcfc,
+//   'theme-black': #131313,
+//   'theme-grey': #d9d9d9,
+//   'theme-grey-2': #ababab,
+//   'green-main': #84a178,
+//   'green-transparent': rgba(156, 190, 143, 0.7),
+//   'orange-main': #d6936d,
+//   'orange-transparent': rgba(213, 117, 63, 0.7),
+//   'green-light': #aec6a5,
+//   'button-text': #000000,
+//   'button-hover-focus': #0a8817,
+//   'button-disable': #ababab,
+//   'footer-border': #e1e1e1,
+//   'footer-grey': #7a7a7a,
+//   'white-contacts': #fff,
+//   'ellipse-color': #9cbe8f,
+// );
 
 @function getColor($key) {
   @return map-get($colors, $key);
