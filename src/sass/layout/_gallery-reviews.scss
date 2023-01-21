@@ -47,6 +47,7 @@
 img.reviews__img-background {
   border-radius: 12px;
   margin-bottom: 80px;
+  box-shadow: 0 8px 30px #d414431a;
 
   @include tablet {
     margin-bottom: 100px;
@@ -68,6 +69,7 @@ img.reviews__img-background {
   margin-left: auto;
   border-radius: 50%;
   margin-bottom: 32px;
+  box-shadow: 0 8px 30px #d414431a;
 }
 
 .reviews__item {
@@ -79,6 +81,7 @@ img.reviews__img-background {
   color: getColor('secondary-text-color');
   background-color: getColor('primary-bg-color');
   border-radius: 10px;
+  box-shadow: 0 8px 30px #d414431a;
 
   @include tablet {
     display: flex;
