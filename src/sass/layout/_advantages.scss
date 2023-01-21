@@ -33,13 +33,13 @@
   @include tablet {
     max-width: 152px;
     max-height: 241px;
-    flex-basis: calc((100% - 240px) / 3);
+    gap: 80px;
   }
 
   @include desktop {
     max-width: 368px;
     max-height: 225px;
-    flex-basis: calc((100% - 96px) / 3);
+    gap: 32px;
   }
 
   &::before {
