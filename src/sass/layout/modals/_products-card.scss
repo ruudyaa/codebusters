@@ -150,6 +150,7 @@
 
 .product__benefit-hidden {
   font-size: 0;
+
   @include tablet {
     font-size: 12px;
   }
