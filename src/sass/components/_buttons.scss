@@ -130,10 +130,12 @@
   position: absolute;
   top: 16px;
   right: 16px;
+
   @media screen and (min-width: 480px) {
     top: 20px;
     right: 20px;
   }
+
   @media screen and (min-width: 768px) {
     top: 32px;
     right: 32px;
