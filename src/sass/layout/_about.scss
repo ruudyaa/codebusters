@@ -10,7 +10,7 @@
   font-size: 18px;
   line-height: calc(22 / 18);
   text-transform: uppercase;
-  color: getColor('theme-white');
+  color: getColor('primary-heading-color');
 
   @include tablet {
     font-weight: 800;
@@ -39,7 +39,7 @@
   line-height: calc(38 / 30);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: getColor('theme-white');
+  color: getColor('primary-heading-color');
 
   @include tablet {
     display: block;
@@ -155,7 +155,7 @@
   line-height: calc(21 / 12);
 
   letter-spacing: 0.04em;
-  color: getColor('theme-white');
+  color: getColor('secondary-text-color');
 
   @include desktop {
     font-size: 16px;
@@ -170,7 +170,7 @@
 
   font-size: 12px;
   line-height: calc(19 / 12);
-  color: getColor('theme-white');
+  color: getColor('secondary-text-color');
 
   @include desktop {
     font-size: 14px;
@@ -193,7 +193,7 @@
 
     letter-spacing: 0.04em;
 
-    color: getColor('theme-white');
+    color: getColor('secondary-text-color');
   }
 
   @include desktop {
@@ -219,11 +219,9 @@
 
   color: getColor('button-text');
   border: none;
-  background: getColor('yellow-main');
+  background: getColor('accent-color');
 
   border-radius: 10px;
-
-  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -240,7 +238,7 @@
   }
   &:focus {
     background: getColor('button-hover-focus');
-    color: getColor('theme-white');
+    color: getColor('button-text-focus');
   }
 }
 

@@ -2,8 +2,8 @@
   padding: 28px 29px 28px 29px;
   width: 280px;
   margin: 0 auto;
-  background: getColor('theme-white');
-  border: 2px solid getColor('yellow-main');
+  background: getColor('secondary-bg-color');
+  border: 2px solid getColor('accent-color');
   border-radius: 10px;
   position: relative;
 
@@ -35,17 +35,15 @@
     width: 20px;
     height: 20px;
     background-color: transparent;
-    color: getColor('theme-black');
+    color: getColor('button-text');
 
     border: none;
-
-    cursor: pointer;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-      color: getColor('orange-main');
+      color: getColor('icon-close-color');
     }
 
     .form__icon-close {
@@ -78,18 +76,18 @@
   }
 
   &__radio:nth-child(1) {
-    border: 2px solid #96af8c;
+    border: 2px solid getColor('first-shape-color');
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   }
 
   &__radio:nth-child(2) {
-    background: getColor('yellow-secondary');
-    border: 2px solid getColor('yellow-secondary');
+    background: getColor('second-shape-color');
+    border: 2px solid getColor('second-shape-color');
     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   }
 
   &__radio:nth-child(3) {
-    border: 2px solid getColor('orange-main');
+    border: 2px solid getColor('third-shape-color');
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
     @media screen and (max-width: 767px) {
       margin-bottom: 31px;
@@ -173,7 +171,7 @@
   }
 
   &__sabmit {
-    background: getColor('yellow-main');
+    background: getColor('accent-color');
     border-radius: 10px;
     width: 121px;
     height: 42px;
@@ -183,14 +181,14 @@
     padding: 12px 34px;
     border: none;
     cursor: pointer;
-    color: getColor('theme-black');
+    color: getColor('button-text');
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
       background-color: getColor('button-hover-focus');
-      color: getColor('theme-white');
+      color: getColor('button-text-focus');
     }
 
     @include tablet {
@@ -262,13 +260,13 @@
 }
 
 .form__choice:checked + .form__radio:nth-child(1) {
-  background-color: #9cbe8f;
+  background-color: getColor('first-shape-color');
 }
 
 .form__choice:checked + .form__radio:nth-child(2) {
-  background-color: rgba(248, 210, 78, 0.7);
+  background-color: getColor('second-shape-color');
 }
 
 .form__choice:checked + .form__radio:nth-child(3) {
-  background-color: rgba(213, 117, 63, 0.7);
+  background-color: getColor('third-shape-color');
 }

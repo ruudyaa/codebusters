@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 19;
-  background-color: getColor('green-main');
+  background-color: getColor('primary-bg-color');
 
   transform: translateX(100%);
   transition: transform 400ms ease-in;
@@ -59,7 +59,7 @@
 }
 
 .navigation-list-menu__link {
-  color: getColor('theme-white');
+  color: getColor('secondary-text-color');
   font-weight: 700;
   font-size: 32px;
   line-height: calc(39 / 32);
@@ -68,7 +68,7 @@
 
   &:hover,
   &:focus {
-    color: getColor('theme-black');
+    color: getColor('link-mobile-focus');
     transform: scale(1.15);
   }
 

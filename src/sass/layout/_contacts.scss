@@ -41,7 +41,7 @@
   max-width: 280px;
   max-height: 412px;
   padding: 40px 36px 24px 32px;
-  background-color: getColor('white-contacts');
+  background-color: getColor('secondary-bg-color');
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -83,8 +83,8 @@
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.04em;
-  color: getColor('theme-black');
-  background-color: getColor('yellow-main');
+  color: getColor('secondary-heading-color');
+  background-color: getColor('accent-color');
   border-radius: 4px;
   padding: 4px 22px;
   margin-bottom: 20px;
@@ -113,7 +113,7 @@
   font-size: 12px;
   line-height: calc(22 / 12);
   letter-spacing: 0.04em;
-  color: getColor('theme-black');
+  color: getColor('secondary-heading-color');
   margin-bottom: 8px;
 
   @include tablet {
@@ -141,7 +141,7 @@
   font-size: 12px;
   line-height: calc(22 / 12);
   letter-spacing: 0.04em;
-  color: getColor('orange-main');
+  color: getColor('link-orange');
   cursor: pointer;
 
   &:hover,
@@ -181,7 +181,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
-  color: getColor('theme-black');
+  color: getColor('main-text-color');
 
   @include tablet {
     font-size: 14px;
@@ -198,7 +198,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
-  color: getColor('theme-grey-2');
+  color: getColor('third-text-color');
 
   @include tablet {
     font-size: 14px;
@@ -211,7 +211,7 @@
   }
   & + span {
     font-weight: 500;
-    color: getColor('theme-grey-2');
+    color: getColor('third-text-color');
   }
 }
 
@@ -235,12 +235,12 @@
   font-size: 12px;
   line-height: calc(19 / 12);
   letter-spacing: normal;
-  color: getColor('theme-black');
+  color: getColor('main-text-color');
   cursor: pointer;
 
   &:hover,
   &:focus {
-    color: getColor('orange-main');
+    color: getColor('accent-color');
   }
 
   &:not(:last-child) {
@@ -285,7 +285,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
-  color: getColor('theme-black');
+  color: getColor('button-text');
   padding: 12px 39px 12px 40px;
   border: none;
   border-radius: 10px;
@@ -293,7 +293,7 @@
 
   &.button__text {
     font-weight: 600;
-    color: getColor('theme-black');
+    color: getColor('button-text');
   }
 
   @media screen and (max-width: 767px) {
@@ -310,8 +310,8 @@
 
 .button__first {
   color: getColor('button-text');
-  background-color: getColor('yellow-main');
-  border-color: getColor('yellow-main');
+  background-color: getColor('accent-color');
+  border-color: getColor('accent-color');
   border-radius: 10px;
 
   transition-property: color, background-color;
@@ -324,11 +324,11 @@
     border-color: getColor('button-hover-focus');
   }
   &:disabled {
-    background-color: getColor('button-disable');
-    border-color: getColor('button-disable');
+    background-color: getColor('button-disabled');
+    border-color: getColor('button-disabled');
   }
   &:focus {
-    color: getColor('theme-white');
+    color: getColor('button-text-focus');
   }
 
   @include tablet {
@@ -337,7 +337,7 @@
 }
 
 .button__two {
-  border: 2px solid getColor('yellow-main');
+  border: 2px solid getColor('accent-color');
   background-color: transparent;
   color: getColor('button-text');
   border-radius: 10px;
@@ -351,9 +351,9 @@
     border-color: getColor('button-hover-focus');
   }
   &:disabled {
-    border-color: getColor('button-disable');
+    border-color: getColor('button-disabled');
   }
   &:focus {
-    color: getColor('theme-white');
+    color: getColor('button-text-focus');
   }
 }
