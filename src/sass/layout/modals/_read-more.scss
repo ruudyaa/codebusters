@@ -22,8 +22,8 @@
 
   padding: 28px;
 
-  background: getColor('theme-white');
-  border: 2px solid getColor('yellow-main');
+  background: getColor('secondary-bg-color');
+  border: 2px solid getColor('accent-color');
   border-radius: 10px;
 
   @include tablet {
@@ -39,7 +39,7 @@
   font-size: 16px;
   line-height: calc(24 / 16);
   text-align: center;
-  color: getColor('theme-black');
+  color: getColor('secondary-heading-color');
 
   @include tablet {
     font-size: 20px;
@@ -59,13 +59,11 @@
 
   border: none;
 
-  cursor: pointer;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   :focus {
-    color: getColor('yellow-main');
+    color: getColor('icon-close-color');
   }
 }
 
@@ -110,7 +108,7 @@
   font-size: 14px;
   line-height: calc(20 / 14);
 
-  color: getColor('theme-black');
+  color: getColor('main-text-color');
 
   @include tablet {
     font-size: 16px;
