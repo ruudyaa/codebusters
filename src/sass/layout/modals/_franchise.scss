@@ -5,8 +5,8 @@
   transform: translate(-50%, -50%) scale(1);
   padding: 28px;
   border-radius: 10px;
-  border: 2px solid getColor('yellow-main');
-  background-color: getColor('white-contacts');
+  border: 2px solid getColor('accent-color');
+  background-color: getColor('secondary-bg-color');
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 767px) {
@@ -30,7 +30,7 @@
   width: 20px;
   height: 20px;
   background-color: transparent;
-  color: getColor('theme-black');
+  color: getColor('button-text');
 
   border: none;
 
@@ -40,7 +40,7 @@
 
   &:hover,
   &:focus {
-    color: getColor('orange-main');
+    color: getColor('icon-close-color');
   }
 
   & .franchise__icon {
@@ -67,7 +67,7 @@
   font-size: 16px;
   line-height: calc(24 / 16);
   text-align: center;
-  color: getColor('theme-black');
+  color: getColor('secondary-heading-color');
   letter-spacing: 0;
   width: 221px;
   height: 72px;
@@ -86,7 +86,7 @@
   font-size: 14px;
   line-height: calc(20 / 14);
   letter-spacing: 0;
-  color: getColor('theme-black');
+  color: getColor('main-text-color');
   margin-bottom: 20px;
   width: 222px;
   max-height: 240px;
@@ -115,8 +115,8 @@
   padding: 8px 12px 7px 12px;
   outline: none;
   margin-bottom: 16px;
-  background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid getColor('green-main');
+  background-color: getColor('input-field-color');
+  border: 1px solid getColor('input-border-default');
   border-radius: 10px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -124,7 +124,7 @@
   height: 32px;
 
   &:focus {
-    border-color: getColor('yellow-main');
+    border-color: getColor('input-border-focus');
   }
 
   @include tablet {
@@ -138,17 +138,17 @@
 }
 
 .form-contacts__input:not(:placeholder-shown):required:valid {
-  border-color: getColor('green-main');
+  border-color: getColor('input-border-default');
 }
 
 .form-contacts__input:not(:placeholder-shown):not(:focus):required:invalid {
-  border-color: #ff0000;
+  border-color: getColor('input-border-invalid');
 }
 
 .form-contacts__textarea {
   resize: none;
-  background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid getColor('green-main');
+  background-color: getColor('input-field-color');
+  border: 1px solid getColor('input-border-default');
   border-radius: 10px;
   padding: 8px 48px 39px 12px;
   width: 224px;
@@ -170,7 +170,7 @@
   }
 
   &:focus {
-    border-color: getColor('yellow-main');
+    border-color: getColor('input-border-focus');
   }
 }
 
@@ -181,8 +181,8 @@
   font-size: 12px;
   line-height: calc(15 / 12);
   text-align: center;
-  color: getColor('theme-black');
-  background-color: getColor('yellow-main');
+  color: getColor('button-text');
+  background-color: getColor('accent-color');
   border: none;
   border-radius: 10px;
   max-width: 114px;
@@ -202,16 +202,16 @@
   }
   &:hover {
     background-color: getColor('button-hover-focus');
-    color: getColor('theme-black');
+    color: getColor('button-text');
   }
   &:focus {
-    color: getColor('white-contacts');
+    color: getColor('button-text-focus');
     background-color: getColor('button-hover-focus');
   }
 
   &:disabled {
-    background-color: getColor('button-disable');
-    border-color: getColor('button-disable');
+    background-color: getColor('button-disabled');
+    border-color: getColor('button-disabled');
   }
 }
 
@@ -228,7 +228,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: calc(17 / 12);
-  color: getColor('theme-black');
+  color: getColor('main-text-color');
 
   @include tablet {
     top: 38%;
@@ -241,21 +241,21 @@
 .form-contacts__input:focus + .form-contacts__label,
 .form-contacts__input:not(:placeholder-shown) + .form-contacts__label {
   transform: translateY(-180%);
-  color: getColor('yellow-main');
+  color: getColor('accent-color');
 
   @include tablet {
     transform: translateY(-200%);
-    color: getColor('yellow-main');
+    color: getColor('accent-color');
   }
 }
 
 .form-contacts__textarea:focus + .form-contacts__label,
 .form-contacts__textarea:not(:placeholder-shown) + .form-contacts__label {
   transform: translateY(-200%);
-  color: getColor('yellow-main');
+  color: getColor('accent-color');
 
   @include tablet {
     transform: translateY(-200%);
-    color: getColor('yellow-main');
+    color: getColor('accent-color');
   }
 }
