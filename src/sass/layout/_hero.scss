@@ -185,6 +185,22 @@
       left: 16px;
       bottom: 65px;
     }
+    &:hover {
+      animation-name: spin;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   &__text {
