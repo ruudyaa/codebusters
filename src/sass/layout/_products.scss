@@ -55,23 +55,28 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: getColor('secondary-heading-color');
-  margin-bottom: 148px;
-
-  @include mobile {
-    margin-bottom: 145px;
-  }
 
   @include tablet {
     font-size: 34px;
     line-height: calc(43 / 34);
-    margin-bottom: 200px;
   }
 
   @include desktop {
     font-size: 36px;
     line-height: calc(45 / 36);
     letter-spacing: 0.06em;
-    margin-bottom: 303px;
+  }
+}
+
+.animation {
+  padding-top: 145px;
+
+  @include tablet {
+    padding-top: 200px;
+  }
+
+  @include desktop {
+    padding-top: 303px;
   }
 }
 
