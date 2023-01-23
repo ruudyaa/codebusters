@@ -1,23 +1,21 @@
-const btnOff = document.querySelector('.js-modal-scrolloff');
-const btnOn = document.querySelector('.js-modal-scrollon');
-const body = document.body;
+document.addEventListener('DOMContentLoaded', function () {
+  var toggleModalButtons = document.querySelectorAll('.toggle-modal');
+  var toggleModalCloseButtons = document.querySelectorAll(
+    '.toggle-modal-close'
+  );
+  var body = document.querySelector('body');
 
-function disableScroll() {
-  body.classList.add('disable-scroll');
-}
+  toggleModalButtons.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      body.classList.add('disable-scroll');
+    });
+  });
 
-function enableScroll() {
-  body.classList.remove('disable-scroll');
-}
-
-btnOff.addEventListener('click', e => {
-  enableScroll();
-  e.currentTarget.style.pointerEvents = 'none';
-  btnOn.style.pointerEvents = 'auto';
-});
-
-btnOn.addEventListener('click', e => {
-  disableScroll();
-  e.currentTarget.style.pointerEvents = 'none';
-  btnOff.style.pointerEvents = 'auto';
+  toggleModalCloseButtons.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      body.classList.remove('disable-scroll');
+    });
+  });
 });
