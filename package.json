@@ -2,11 +2,10 @@
   "name": "codebusters",
   "version": "2.0.0",
   "description": "",
+  "homepage": "https://ruudyaa.github.io/codebusters",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /codebusters/",
-    "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "build": "parcel build src/*.html --public-url /codebusters/"
   },
   "repository": {
     "type": "git",
