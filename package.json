@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /codebusters/",
     "predeploy": "npm run build",
     "deploy": "netlify deploy -p"
   },
