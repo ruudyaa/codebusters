@@ -40,55 +40,8 @@
   }
 }
 
-.btn-hero {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.btn-hero_icon {
-  fill: getColor('icon-hover-focus');
-}
-
-.btn-products {
-  background-color: transparent;
-  border-color: transparent;
-  display: block;
-  margin: 0 auto;
-}
-
-.btn-about {
-  @extend %button;
-  &:focus > .btn__icon {
-    fill: getColor('icon-hover-focus');
-  }
-}
-
-.btn-contacts {
-  @extend %button;
-  width: 196px;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 16px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-right: 16px;
-  }
-  &:focus > .btn__icon {
-    fill: getColor('icon-hover-focus');
-  }
-}
-
-.btn-transparent-contacts {
-  @extend %button;
-  width: 196px;
-  background-color: transparent;
-  &:focus > .btn__icon {
-    fill: getColor('icon-hover-focus');
-  }
-}
-
 .btn__icon {
-  margin-left: 7px;
+  margin-left: 4px;
 }
 
 // ---------Menu buttons-------------
@@ -166,8 +119,17 @@
     width: 24px;
     height: 24px;
   }
+  &:hover > .btn-modal-close__icon {
+    fill: getColor('icon-close-color');
+  }
+  &:focus > .btn-modal-close__icon {
+    fill: getColor('icon-close-color');
+  }
 }
 
 .btn-modal-close__icon {
   fill: getColor('theme-dark');
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

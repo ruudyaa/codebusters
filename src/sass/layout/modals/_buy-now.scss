@@ -152,12 +152,20 @@
 
 .buy-now-list__desc {
   position: absolute;
-  transform: translate(12%, -40px);
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.buy-now-list__desc--first {
+  transform: translate(15%, -40px);
+}
+
+.buy-now-list__desc--second,
+.buy-now-list__desc--third {
+  transform: translate(12%, -40px);
 }
 
 .form__submit {
