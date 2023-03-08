@@ -27,13 +27,13 @@
 .buy-now-form__title {
   font-family: 'Seymour One', sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: calc(24 / 16);
   margin-bottom: 83px;
   text-align: center;
 
   @include tablet {
     font-size: 20px;
-    line-height: 28px;
+    line-height: calc(28 / 20);
     margin-bottom: 103px;
   }
 }
@@ -154,7 +154,7 @@
   position: absolute;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  line-height: calc(20 / 16);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -175,7 +175,7 @@
   height: 42px;
   font-weight: 600;
   font-size: 12px;
-  line-height: 15px;
+  line-height: calc(15 / 12);
   padding: 12px 34px;
   border: none;
   color: getColor('button-text');
@@ -190,6 +190,6 @@
 
   @include tablet {
     font-size: 14px;
-    line-height: 17px;
+    line-height: calc(17 / 14);
   }
 }
