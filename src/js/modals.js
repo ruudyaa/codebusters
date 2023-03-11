@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 }); // end ready
 
-document.onready = function () {
-  document.querySelectorAll('input[required]').forEach(function (e) {
-    e.required = true;
-  });
-};
+// document.onready = function () {
+//   document.querySelectorAll('input[required]').forEach(function (e) {
+//     e.required = true;
+//   });
+// };
