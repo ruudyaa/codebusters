@@ -143,6 +143,10 @@
 //   border-color: getColor('input-border-invalid');
 // }
 
+.form-contacts__input:not(:placeholder-shown):required:invalid {
+  border-color: getColor('input-border-invalid');
+}
+
 .form-contacts__textarea {
   resize: none;
   background-color: getColor('input-field-color');
