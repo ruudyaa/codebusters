@@ -82,6 +82,9 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
   });
 }); // end ready
-$(window).load(function () {
-  $('input[data-required=true]').attr('required', true);
-});
+
+document.onready = function () {
+  document.querySelectorAll('input[data-required]').forEach(function (e) {
+    e.required = true;
+  });
+};
