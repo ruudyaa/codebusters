@@ -83,8 +83,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 }); // end ready
 
-document.onready = function () {
-  document.querySelectorAll('input[data-required]').forEach(function (e) {
-    e.required = true;
+let requiredComponents = document.querySelectorAll('[required]');
+requiredComponents.forEach(function (e) {
+  e.removeAttribute('required');
+});
+
+document.getElementById('submit-button').addEventListener('click', function () {
+  requiredComponents.forEach(function (e) {
+    e.setAttribute('required', true);
   });
-};
+});
+
+document.getElementById('form-id').addEventListener('submit', function () {
+  requiredComponents.forEach(function (e) {
+    e.setAttribute('required', true);
+  });
+});
