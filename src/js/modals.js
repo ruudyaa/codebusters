@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
 }); // end ready
 
 document.onready = function () {
-  document.querySelectorAll('input[data-required]').forEach(function (e) {
+  document.querySelectorAll('input[required]').forEach(function (e) {
     e.required = true;
   });
 };
