@@ -82,9 +82,3 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
   });
 }); // end ready
-
-// document.onready = function () {
-//   document.querySelectorAll('input[required]').forEach(function (e) {
-//     e.required = true;
-//   });
-// };
